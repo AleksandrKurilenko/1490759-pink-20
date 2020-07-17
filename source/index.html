@@ -1,12 +1,75 @@
-<!DOCTYPE html>
-<html lang="ru">
+  <!DOCTYPE html>
+  <html class="page" lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
   </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+  <body class="page__body">
+    <header class="page-header">
+      <nav class="main-nav">
+        <div class="main-nav__wrapper">
+          <a class="page-header__logo">
+            <img src="https://via.placeholder.com/150x150" alt="">
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="main-nav__item site-list__item--active">
+              <a>главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="photo.html">фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="#">HTML Academy</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
 
+      <section class="header-presentation header-presentation--index">
+        <h1 class="header-presentation__title">Взгляните на жизнь иначе!</h1>
+        <div class="header-presentation__downloads">
+          <a class="btn" href="#"></a>
+          <a class="logo-apple" href="#"></a>
+          <a class="logo-android" href="#"></a>
+          <a class="logo-microsoft" href="#"></a>
+          <p class="header-presentation__content">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
+      </section>
+    </header>
+    <main class="page-main">
+      <section class="app-advertising">
+        <div class="app-advertising__wrapper">
+          <h2 class="app-advertising__slogan">Устали от серости мегаполиса?</h2>
+          <h2 class="app-advertising__slogan">Нам есть, что вам предложить!</h2>
+        </div>
+        <section class="app-advertising__items">
+          <div class="app-advertising__wrapper-item">
+            <h3 class="app-advertising__title">Поднимает настроение</h3>
+            <p class="app-advertising__content">Приложение позволит вам победить осеннюю хандру и деперессию буквально в
+              несколько кликов!</p>
+          </div>
+          <div class="app-advertising__wrapper-item">
+            <h3 class="app-advertising__title">Меняет мир вокруг</h3>
+            <p class="app-advertising__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+              усилить эффект</p>
+          </div>
+          <div class="app-advertising__wrapper-item">
+            <h3 class="app-advertising__title">Заводит новых друзей</h3>
+            <p class="app-advertising__content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите
+              новых</p>
+          </div>
+
+        </section>
+      </section>
+    </main>
   </body>
-</html>
+
+  </html>
