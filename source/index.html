@@ -6,7 +6,7 @@
     <title>HTML Academy: Пинк</title>
   </head>
 
-  <body class="page__body">
+  <body class="page-body">
     <header class="page-header">
       <nav class="main-nav">
         <div class="main-nav__wrapper">
@@ -16,8 +16,8 @@
           <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
-          <ul class="main-nav__list site-list">
-            <li class="main-nav__item site-list__item--active">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--active">
               <a>главная</a>
             </li>
             <li class="main-nav__item">
@@ -120,41 +120,43 @@
               <input class="price__btn" type="radio" name="price" id="price-radio-1">
               <input class="price__btn" type="radio" name="price" id="price-radio-2" checked="">
               <input class="price__btn" type="radio" name="price" id="price-radio-3">
-              <label class="slider-items__btn" for="price-radio-1"></label>
-              <label class="slider-items__btn slider-items__btn--active" for="price-radio-2"></label>
-              <label class="slider-items__btn" for="price-radio-3"></label>
+              <label class="price__slider-items__btn" for="price-radio-1"></label>
+              <label class="price__slider-items__btn price__slider-items__btn--active" for="price-radio-2"></label>
+              <label class="price__slider-items__btn" for="price-radio-3"></label>
             </div>
           </div>
         </div>
       </section>
-      <div class="main__contacts-wrapper">
-        <section class="main__contacts">
-          <h2 class="main__contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-          <section class="main__contacts__call">
-            <h4 class="main__contacts__tel-title">Звоните:</h4>
-            <p class="main__contacts__tel">+7 (812) 555-66-66</p>
+
+      <section class="main-contacts">
+        <div class="main-contacts__wrapper">
+          <h4 class="main-contacts__title">Остались вопросы? Свяжитесь с нами!</h4>
+          <section class="main-contacts__call">
+            <h4 class="main-contacts__tel-title">Звоните:</h4>
+            <p class="main-contacts__tel">+7 (812) 555-66-66</p>
           </section>
-          <div class="main__contacts__write">
-            <p class="main__contacts__write-title">Пишите:</p>
-            <a href="#" class="main__contacts-write--mail">mail@htmlacademy.ru</a>
+          <div class="main-contacts__write">
+            <p class="main-contacts__write-title">Пишите:</p>
+            <a href="#" class="main-contacts__write-mail">mail@htmlacademy.ru</a>
           </div>
-          <div class="main__contacts__adress">
-            <p class="main__contacts__adress-title"></p>
-            <address class="main__contacts__adress-info">ул. Большая Конюшенная, 19/8</address>
+          <div class="main-contacts__adress">
+            <p class="main-contacts__adress-title"></p>
+            <address class="main-contacts__adress-info">ул. Большая Конюшенная, 19/8</address>
           </div>
           <div class="map">
             <img src="https://via.placeholder.com/150x150" alt="">
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+
     </main>
     <footer class="page-footer">
       <div class="page-footer__copyright">
         <a href="index.html" class="logo"><img src="https://via.placeholder.com/150x150" alt=""></a>
         <div class="page-footer__social-links">
-          <a href="#" class="social-links__link social-links__link--twitter"></a>
-          <a href="#" class="social-links__link social-links__link--facebook"></a>
-          <a href="#" class="social-links__link social-links__link--youtube"></a>
+          <a href="#" class="page-footer__social-links__link page-footer__social-links__link--twitter"></a>
+          <a href="#" class="page-footer__social-links__link page-footer__social-links__link--facebook"></a>
+          <a href="#" class="page-footer__social-links__link page-footer__social-links__link--youtube"></a>
         </div>
         <div class="page-footer__writer">
           <a class="page-footer__copyright-link" href="https://htmlacademy.ru">Разработано</a>
@@ -162,4 +164,5 @@
       </div>
     </footer>
   </body>
+
   </html>
