@@ -32,15 +32,14 @@
           </ul>
         </div>
       </nav>
-
-      <section class="header-presentation header-presentation--index">
-        <h1 class="header-presentation__title">Взгляните на жизнь иначе!</h1>
-        <div class="header-presentation__downloads">
+      <section class="intro intro--index">
+        <h1 class="intro__title">Взгляните на жизнь иначе!</h1>
+        <div class="intro__downloads">
           <a class="btn" href="#"></a>
           <a class="logo-apple" href="#"></a>
           <a class="logo-android" href="#"></a>
           <a class="logo-microsoft" href="#"></a>
-          <p class="header-presentation__content">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <p class="intro__content">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
         </div>
       </section>
     </header>
@@ -49,27 +48,118 @@
         <div class="app-advertising__wrapper">
           <h2 class="app-advertising__slogan">Устали от серости мегаполиса?</h2>
           <h2 class="app-advertising__slogan">Нам есть, что вам предложить!</h2>
+          <section class="app-advertising__items">
+            <div class="app-advertising__wrapper-item">
+              <h3 class="app-advertising__title">Поднимает настроение</h3>
+              <p class="app-advertising__content">Приложение позволит вам победить осеннюю хандру и деперессию буквально
+                в
+                несколько кликов!</p>
+            </div>
+            <div class="app-advertising__wrapper-item">
+              <h3 class="app-advertising__title">Меняет мир вокруг</h3>
+              <p class="app-advertising__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
+                усилить эффект</p>
+            </div>
+            <div class="app-advertising__wrapper-item">
+              <h3 class="app-advertising__title">Заводит новых друзей</h3>
+              <p class="app-advertising__content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и
+                заводите
+                новых</p>
+            </div>
+          </section>
         </div>
-        <section class="app-advertising__items">
-          <div class="app-advertising__wrapper-item">
-            <h3 class="app-advertising__title">Поднимает настроение</h3>
-            <p class="app-advertising__content">Приложение позволит вам победить осеннюю хандру и деперессию буквально в
-              несколько кликов!</p>
-          </div>
-          <div class="app-advertising__wrapper-item">
-            <h3 class="app-advertising__title">Меняет мир вокруг</h3>
-            <p class="app-advertising__content">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы
-              усилить эффект</p>
-          </div>
-          <div class="app-advertising__wrapper-item">
-            <h3 class="app-advertising__title">Заводит новых друзей</h3>
-            <p class="app-advertising__content">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите
-              новых</p>
-          </div>
-
-        </section>
       </section>
+      <section class="reviews">
+        <div class="reviews__wrapper">
+          <div class="reviews__item">
+            <h4 class="reviews__title">Николай Петров</h4>
+            <p class="reviews__content">«Это приложение перевернуло мой мир и
+              позволило по-новому взглянуть на
+              привычные серые вещи! А еще
+              я познакомился со своей будущей женой
+              в комментариях к выложенной
+              фотографии!»
+            </p>
+          </div>
+          <div class="reviews__radio">
+            <input class="reviews-radio-input visually-hidden" id="reviews-radio-button1" type="radio"
+              name="radio-button" checked>
+            <input class="reviews-radio-input visually-hidden" id="reviews-radio-button2" type="radio"
+              name="radio-button">
+            <input class="reviews-radio-input visually-hidden" id="reviews-radio-button3" type="radio"
+              name="radio-button">
+            <label class="reviews__radio__control" for="reviews-radio-button1"></label>
+            <label class="reviews__radio__control" for="reviews-radio-button2"></label>
+            <label class="reviews__radio__control" for="reviews-radio-button3"></label>
+          </div>
+        </div>
+      </section>
+      <section class="price">
+        <h4 class="visual hidden">tarifs</h4>
+        <div class="price__wrapper">
+          <div class="price__items">
+            <table class="price__table">
+              <thead class="price__table-title">
+                <tr>
+                  <th>стандарт <br>3,99 USD</th>
+                </tr>
+              </thead>
+              <tbody class="price__table-list">
+                <tr>
+                  <td>Розовый фильтр</td>
+                </tr>
+                <tr>
+                  <td>Смайлики</td>
+                </tr>
+                <tr>
+                  <td>Комментарии</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="price__slider-items">
+              <input class="price__btn" type="radio" name="price" id="price-radio-1">
+              <input class="price__btn" type="radio" name="price" id="price-radio-2" checked="">
+              <input class="price__btn" type="radio" name="price" id="price-radio-3">
+              <label class="slider-items__btn" for="price-radio-1"></label>
+              <label class="slider-items__btn slider-items__btn--active" for="price-radio-2"></label>
+              <label class="slider-items__btn" for="price-radio-3"></label>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="main__contacts-wrapper">
+        <section class="main__contacts">
+          <h2 class="main__contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+          <section class="main__contacts__call">
+            <h4 class="main__contacts__tel-title">Звоните:</h4>
+            <p class="main__contacts__tel">+7 (812) 555-66-66</p>
+          </section>
+          <div class="main__contacts__write">
+            <p class="main__contacts__write-title">Пишите:</p>
+            <a href="#" class="main__contacts-write--mail">mail@htmlacademy.ru</a>
+          </div>
+          <div class="main__contacts__adress">
+            <p class="main__contacts__adress-title"></p>
+            <address class="main__contacts__adress-info">ул. Большая Конюшенная, 19/8</address>
+          </div>
+          <div class="map">
+            <img src="https://via.placeholder.com/150x150" alt="">
+          </div>
+        </section>
+      </div>
     </main>
+    <footer class="page-footer">
+      <div class="page-footer__copyright">
+        <a href="index.html" class="logo"><img src="https://via.placeholder.com/150x150" alt=""></a>
+        <div class="page-footer__social-links">
+          <a href="#" class="social-links__link social-links__link--twitter"></a>
+          <a href="#" class="social-links__link social-links__link--facebook"></a>
+          <a href="#" class="social-links__link social-links__link--youtube"></a>
+        </div>
+        <div class="page-footer__writer">
+          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">Разработано</a>
+        </div>
+      </div>
+    </footer>
   </body>
-
   </html>
