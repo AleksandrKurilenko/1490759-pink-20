@@ -1,5 +1,5 @@
   <!DOCTYPE html>
-  <html class="page" lang="ru">
+  <html lang="ru">
 
   <head>
     <meta charset="utf-8">
@@ -8,42 +8,39 @@
 
   <body class="page-body">
     <header class="page-header">
+      <a href="index.html" class="page-header__logo">
+        <img src="https://via.placeholder.com/150x150" alt="">
+      </a>
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <a href="index.html" class="page-header__logo">
-            <img src="https://via.placeholder.com/150x150" alt="">
-          </a>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="main-nav__list site-list">
-            <li class="main-nav__item">
-              <a href="index.html">главная</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="photo.html">фотографии</a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a>конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="main-nav__item">
+            <a href="index.html">главная</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="photo.html">фотографии</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a>конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
-      <section class="intro">
-        <div class="intro__wrapper">
-          <h1 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
-        </div>
-      </section>
     </header>
     <main class="page-main">
+      <section class="intro">
+        <h1 class="intro__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </section>
       <section class="section-form">
-        <form class="form">
-          <p class="form-title">Поделитесь своей историей и получите
-            шанс выиграть ценный приз — 1000
-            миль на вашу бонусную карту!</p>
+        <h2 class="visually-hidden">форма для заполнения</h2>
+        <p class="section-form__slogan">Поделитесь своей историей и получите
+          шанс выиграть ценный приз — 1000
+          миль на вашу бонусную карту!</p>
+        <form class="form" action="https://echo.htmlacademy.ru">
           <fieldset class="form__fieldset">
             <ul class="form__fieldset__list">
               <li class="form__fieldset__list-item">
@@ -118,24 +115,20 @@
             <textarea class="textarea-text" name="emotion" id="emotion"
               placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
           </fieldset>
-          <div class="form__fieldset__wrapper">
-            <input class="form__fieldset__submit" type="submit" value="Отправить форму">
-            <div class="form__fieldset__require">* — обязательные поля</div>
-          </div>
+          <button class="form__fieldset__submit" type="submit" value="Отправить форму">Отправить форму</button>
+          <p class="form__fieldset__require">* — обязательные поля</p>
         </form>
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__copyright">
-        <a href="index.html" class="logo"><img src="https://via.placeholder.com/150x150" alt=""></a>
-        <div class="page-footer__social-links">
-          <a href="#" class="page-footer__social-links__link page-footer__social-links__link--twitter"></a>
-          <a href="#" class="page-footer__social-links__link page-footer__social-links__link--facebook"></a>
-          <a href="#" class="page-footer__social-links__link page-footer__social-links__link--youtube"></a>
-        </div>
-        <div class="page-footer__writer">
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">Разработано</a>
-        </div>
+        <a href="index.html" class="page-footer__logo"><img src="https://via.placeholder.com/150x150" alt=""></a>
+        <ul class="page-footer__social-links">
+          <li><a href="#" class="page-footer__social-links__link page-footer__social-links__twitter"></a></li>
+          <li><a href="#" class="page-footer__social-links__link page-footer__social-links__facebook"></a></li>
+          <li><a href="#" class="page-footer__social-links__link page-footer__social-links__youtube"></a></li>
+        </ul>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru">Разработано</a>
       </div>
     </footer>
   </body>

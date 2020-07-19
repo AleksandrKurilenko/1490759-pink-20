@@ -1,5 +1,5 @@
   <!DOCTYPE html>
-  <html class="page" lang="ru">
+  <html lang="ru">
 
   <head>
     <meta charset="utf-8">
@@ -8,47 +8,38 @@
 
   <body class="page-body">
     <header class="page-header">
+      <a href="index.html" class="page-header__logo">
+        <img src="https://via.placeholder.com/150x150" alt="">
+      </a>
       <nav class="main-nav">
-        <div class="main-nav__wrapper">
-          <a href="index.html" class="page-header__logo">
-            <img src="https://via.placeholder.com/150x150" alt="">
-          </a>
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="main-nav__list site-list">
-            <li class="main-nav__item">
-              <a href="index.html">главная</a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a>фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="#">HTML Academy</a>
-            </li>
-          </ul>
-        </div>
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="main-nav__item">
+            <a href="index.html">главная</a>
+          </li>
+          <li class="main-nav__item main-nav__item--active">
+            <a>фотографии</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">конкурс</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
+          </li>
+        </ul>
       </nav>
-      <section class="intro intro--photo">
-        <div class="intro__wrapper">
-          <h1 class="intro__title">Фотографии пользователей</h1>
-        </div>
-      </section>
     </header>
     <main class="page-main">
-      <div class="main-photo">
-        <div class="main-photo__title">
-          <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        </div>
-        <div class="user-photo">
-          <div class="user-photo__panorama">
-            <p class="user-photo__name-photo">панорама дня</p>
-            <img src="https://via.placeholder.com/150x150" alt="">
-          </div>
-          <section class="user-photo__caption">
+      <section class="intro intro--photo">
+        <h1 class="intro__title">Фотографии пользователей</h1>
+      </section>
+      <p>Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+      <ul class="main-photo">
+        <li class="user-photo">
+          <img src="https://via.placeholder.com/150x150" alt="">
+          <article class="user-photo__caption">
             <h2 class="user-photo__title">Анна<span>(5 минут назад)</span>
             </h2>
             <p class="user-photo__content">Прыгать или нет? Напишите в
@@ -57,98 +48,107 @@
               перископе, задавайте свои вопросы!</p>
             <div class="user-photo__like">Нравится:<span>215</span>
             </div>
-          </section>
-        </div>
-        <div class="user-wrapper">
-          <div class="user-photo">
-            <img src="https://via.placeholder.com/150x150" alt="">
-            <section class="user-photo__caption">
-              <h3 class="user-photo__title">Левон<span>(5 часов назад)</span>
-              </h3>
-              <p class="user-photo__content">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-              <div class="user-photo__like">Нравится:<span>356</span>
-              </div>
-            </section>
-          </div>
-          <div class="user-photo">
-            <img src="https://via.placeholder.com/150x150" alt="">
-            <section class="user-photo__caption">
-              <h3 class="user-photo__title">Антон<span>(15 часов назад)</span>
-              </h3>
-              <p class="user-photo__content">Соседи будут рады!</p>
-              <div class="user-photo__like">Нравится:<span>666</span>
-              </div>
-            </section>
-          </div>
-          <div class="user-photo">
-            <img src="https://via.placeholder.com/150x150" alt="">
-            <section class="user-photo__caption">
-              <h3 class="user-photo__title">Борис<span>(20 часов назад)</span>
-              </h3>
-              <p class="user-photo__content">Здесь могла быть ваша цитата о высоком и вечном.</p>
-              <div class="user-photo__like">Нравится:<span>215</span>
-              </div>
-            </section>
-          </div>
-          <div class="user-photo">
-            <img src="https://via.placeholder.com/150x150" alt="">
-            <section class="user-photo__caption">
-              <h3 class="user-photo__title">Сергей<span>(25 часов назад)</span>
-              </h3>
-              <p class="user-photo__content">Самая кубанская в мире!</p>
-              <div class="user-photo__like">Нравится:<span>4</span>
-              </div>
-            </section>
-          </div>
-          <div class="user-photo">
-            <img src="https://via.placeholder.com/150x150" alt="">
-            <section class="user-photo__caption">
-              <h3 class="user-photo__title">Максим<span>(40 часов назад)</span>
-              </h3>
-              <p class="user-photo__content">Где снег-то?</p>
-              <div class="user-photo__like">Нравится:<span>150</span>
-              </div>
-            </section>
-          </div>
-          <div class="user-photo">
-            <img src="https://via.placeholder.com/150x150" alt="">
-            <section class="user-photo__caption">
-              <h3 class="user-photo__title">Надежда<span>(40 часов назад)</span>
-              </h3>
-              <p class="user-photo__content">Всем GM и взаимные лайки!</p>
-              <div class="user-photo__like">Нравится:<span>2560</span>
-              </div>
-            </section>
-          </div>
-        </div>
-      </div>
+          </article>
+        </li>
+        <li class="user-photo">
+          <img src="https://via.placeholder.com/150x150" alt="">
+          <article class="user-photo__caption">
+            <h3 class="user-photo__title">Левон<span>(5 часов назад)</span>
+            </h3>
+            <p class="user-photo__content">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <div class="user-photo__like">Нравится:<span>356</span>
+            </div>
+          </article>
+        </li>
+        <li class="user-photo">
+          <img src="https://via.placeholder.com/150x150" alt="">
+          <article class="user-photo__caption">
+            <h3 class="user-photo__title">Антон<span>(15 часов назад)</span>
+            </h3>
+            <p class="user-photo__content">Соседи будут рады!</p>
+            <div class="user-photo__like">Нравится:<span>666</span>
+            </div>
+          </article>
+        </li>
+        <li class="user-photo">
+          <img src="https://via.placeholder.com/150x150" alt="">
+          <article class="user-photo__caption">
+            <h3 class="user-photo__title">Борис<span>(20 часов назад)</span>
+            </h3>
+            <p class="user-photo__content">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <div class="user-photo__like">Нравится:<span>215</span>
+            </div>
+          </article>
+        </li>
+        <li class="user-photo">
+          <img src="https://via.placeholder.com/150x150" alt="">
+          <article class="user-photo__caption">
+            <h3 class="user-photo__title">Сергей<span>(25 часов назад)</span>
+            </h3>
+            <p class="user-photo__content">Самая кубанская в мире!</p>
+            <div class="user-photo__like">Нравится:<span>4</span>
+            </div>
+          </article>
+        </li>
+        <li class="user-photo">
+          <img src="https://via.placeholder.com/150x150" alt="">
+          <article class="user-photo__caption">
+            <h3 class="user-photo__title">Максим<span>(40 часов назад)</span>
+            </h3>
+            <p class="user-photo__content">Где снег-то?</p>
+            <div class="user-photo__like">Нравится:<span>150</span>
+            </div>
+          </article>
+        </li>
+        <li class="user-photo">
+          <img src="https://via.placeholder.com/150x150" alt="">
+          <article class="user-photo__caption">
+            <h3 class="user-photo__title">Надежда<span>(40 часов назад)</span>
+            </h3>
+            <p class="user-photo__content">Всем GM и взаимные лайки!</p>
+            <div class="user-photo__like">Нравится:<span>2560</span>
+            </div>
+          </article>
+        </li>
+      </ul>
       <section class="photo-posting">
-        <h4 class="visually-hidden">photo-load</h4>
-        <div class="photo-posting__wrapper">
-          <p class="photo-posting__content">Затмите их всех!<br>Выкладывайтевсе,что накопилось в телефоне!</p>
-        </div>
-        <form class="photo-posting__form" action="echo" method="post">
-          <div class="photo-posting__form-wrapper">
-            <picture class="photo-posting__img">
-              <img src="https://via.placeholder.com/150x150" alt="">
-            </picture>
-            <input class="photo-posting__button photo-posting__button--submit" type="submit" value="Запостить">
-            <input class="photo-posting__button photo-posting__button--reset" type="reset" value="Отмена">
-          </div>
+        <h2 class="visually-hidden">загрузка фотографий пользователя</h2>
+        <p class="photo-posting__content">Затмите их всех!<br>Выкладывайтевсе,что накопилось в телефоне!</p>
+        <form class="photo-posting__form" action="https://echo.htmlacademy.ru" method="post">
+          <img src="https://via.placeholder.com/150x150" alt="">
+          <button class="photo-posting__button photo-posting__button--submit" type="submit" value="Запостить"></button>
+          <button class="photo-posting__button photo-posting__button--reset" type="reset" value="Отмена"></button>
         </form>
+        <ul class="photo-posting__radio">
+          <li>
+            <input class="photo-posting__radio-input visually-hidden" id="photo-posting__radio-button1" type="radio"
+              name="radio-button" checked>
+            <label class="photo-posting__radio__control" for="photo-posting__radio-button1"></label>
+          </li>
+          <li>
+            <input class="photo-posting__radio-input visually-hidden" id="photo-posting__radio-button2" type="radio"
+              name="radio-button">
+            <label class="photo-posting__radio__control" for="photo-posting__radio-button2"></label>
+          </li>
+          <li>
+            <input class="photo-posting__radio-input visually-hidden" id="photo-posting__radio-button3" type="radio"
+              name="radio-button">
+            <label class="photo-posting__radio__control" for="photo-posting__radio-button3"></label>
+          </li>
+        </ul>
+        <input class="photo-posting__slider" type="range">
+        <!-- на input[type="slider"]ругается валидатор -->
       </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__copyright">
-        <a href="index.html" class="logo"><img src="https://via.placeholder.com/150x150" alt=""></a>
-        <div class="page-footer__social-links">
-          <a href="#" class="page-footer__social-links__link page-footer__social-links__link--twitter"></a>
-          <a href="#" class="page-footer__social-links__link page-footer__social-links__link--facebook"></a>
-          <a href="#" class="page-footer__social-links__link page-footer__social-links__link--youtube"></a>
-        </div>
-        <div class="page-footer__writer">
-          <a class="page-footer__copyright-link" href="https://htmlacademy.ru">Разработано</a>
-        </div>
+        <a href="index.html" class="page-footer__logo"><img src="https://via.placeholder.com/150x150" alt=""></a>
+        <ul class="page-footer__social-links">
+          <li><a href="#" class="page-footer__social-links__link page-footer__social-links__twitter"></a></li>
+          <li><a href="#" class="page-footer__social-links__link page-footer__social-links__facebook"></a></li>
+          <li><a href="#" class="page-footer__social-links__link page-footer__social-links__youtube"></a></li>
+        </ul>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru">Разработано</a>
       </div>
     </footer>
   </body>
