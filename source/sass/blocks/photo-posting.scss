@@ -1,0 +1,35 @@
+
+.photo-posting__content {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+}
+
+.photo-posting__button--submit {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #d22856;
+  border: 3px solid #d22856;
+  box-sizing: border-box;
+  border-radius: 30px;
+  width: 280px;
+  height: 55px;
+}
+
+.photo-posting__button--reset {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #283645;
+  opacity: 0.1;
+  border: 3px solid #283645;
+  box-sizing: border-box;
+  border-radius: 30px;
+  width: 280px;
+  height: 55px;
+}
