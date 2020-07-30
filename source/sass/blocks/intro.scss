@@ -1,0 +1,35 @@
+.intro {
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+}
+
+.intro__title {
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.intro__btn {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+  border: 3px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 29px;
+  text-decoration: none;
+}
+
+.intro__list {
+  list-style: none;
+}
+
+.intro__content {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+}
