@@ -1,0 +1,42 @@
+.researches {
+  display: none;
+  flex-direction: column;
+  width: 620px;
+  margin: 0 auto;
+
+  @media (min-width: 660px) {
+    display: flex;
+  }
+
+  @media (min-width: 960px) {
+    display: flex;
+    width: 940px;
+  }
+}
+
+.researches__title {
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+  color: #000000;
+  width: 168px;
+}
+
+.researches__content {
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645;
+  width: 300px;
+  letter-spacing: 1px;
+
+  @media (min-width: 960px) {
+    width: 400px;
+  }
+}
+
+.researches__link {
+  font-size: 14px;
+  line-height: 24px;
+  text-decoration-line: underline;
+  color: #d22856;
+}

@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
     <link href="./css/style.css" rel="stylesheet">
   </head>
@@ -34,16 +35,18 @@
     </header>
     <main class="page-main">
       <h1 class="visually-hidden">Наше приложение для фотографий.</h1>
-      <section class="intro">
-        <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
-        <a class="intro__btn" href="#">Скачать приложение</a>
-        <ul class="intro__list">
-          <li><a class="intro__icon intro__icon--apple" href="#" aria-label="icon-apple"></a></li>
-          <li><a class="intro__icon intro__icon--android" href="#" aria-label="icon-android"></a></li>
-          <li><a class="intro__icon intro__icon--microsoft" href="#" aria-label="icon-microsoft"></a></li>
-        </ul>
-        <p class="intro__content">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-      </section>
+      <div class="intro__wrapper">
+        <section class="intro">
+          <h2 class="intro__title">Взгляните на жизнь иначе!</h2>
+          <a class="intro__btn" href="#">Скачать приложение</a>
+          <ul class="intro__list">
+            <li><a class="intro__icon intro__icon--apple" href="#" aria-label="icon-apple"></a></li>
+            <li><a class="intro__icon intro__icon--android" href="#" aria-label="icon-android"></a></li>
+            <li><a class="intro__icon intro__icon--microsoft" href="#" aria-label="icon-microsoft"></a></li>
+          </ul>
+          <p class="intro__content">Доступно для iPhone, iPad, Android,<br> Windows Phone, OS X, Windows 8</p>
+        </section>
+      </div>
       <section class="app-advertising">
         <h2 class="visually-hidden">реклама приложения</h2>
         <p class="app-advertising__slogan">Устали от серости мегаполиса?</p>
@@ -68,33 +71,36 @@
           </li>
         </ul>
       </section>
+      <article class="researches">
+        <h2 class="researches__title">Эффект&nbsp;на 24 часа!</h2>
+        <p class="researches__content">Британские ученые провели исследования
+          и доказали, что положительный эффект
+          от использования приложения длится целые сутки!</p>
+        <a class="researches__link" href="#">Узнать больше об исследовании</a>
+      </article>
       <section class="reviews">
         <h2 class="visually-hidden">цитаты-пользователей</h2>
         <blockquote class="reviews__item">
           <cite class="reviews__avtor">Николай Петров</cite>
-          <p class="reviews__content">«Это приложение перевернуло мой мир и
-            позволило по-новому взглянуть на
-            привычные серые вещи! А еще
-            я познакомился со своей будущей женой
-            в комментариях к выложенной
-            фотографии!»
-          </p>
+          <p class="reviews__content">«Это приложение перевернуло мой мир<br> и позволило по-новому взглянуть на<br>
+            привычные серые вещи! А еще я<br> познакомился со своей будущей женой<br> в комментариях к выложенной<br>
+            фотографии!»</p>
         </blockquote>
         <ul class="reviews__radio">
           <li>
-            <input class="reviews__radio__input visually-hidden" id="reviews-radio-button1" type="radio"
+            <input class="reviews__radio-input visually-hidden" id="reviews-radio-button1" type="radio"
               name="radio-button" checked>
-            <label class="reviews__radio__control" for="reviews-radio-button1"></label>
+            <label class="reviews__radio-control" for="reviews-radio-button1"></label>
           </li>
           <li>
-            <input class="reviews__radio__input visually-hidden" id="reviews-radio-button2" type="radio"
+            <input class="reviews__radio-input visually-hidden" id="reviews-radio-button2" type="radio"
               name="radio-button">
-            <label class="reviews__radio__control" for="reviews-radio-button2"></label>
+            <label class="reviews__radio-control" for="reviews-radio-button2"></label>
           </li>
           <li>
-            <input class="reviews__radio__input visually-hidden" id="reviews-radio-button3" type="radio"
+            <input class="reviews__radio-input visually-hidden" id="reviews-radio-button3" type="radio"
               name="radio-button">
-            <label class="reviews__radio__control" for="reviews-radio-button3"></label>
+            <label class="reviews__radio-control" for="reviews-radio-button3"></label>
           </li>
         </ul>
       </section>

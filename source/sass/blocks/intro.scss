@@ -1,5 +1,11 @@
 .intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__wrapper {
   background-image: url("../img/bg-back-mobile@1x.jpg");
+  margin: 0 auto;
 }
 
 .intro__title {
@@ -8,6 +14,8 @@
   line-height: 29px;
   text-align: center;
   color: #ffffff;
+  width: 280px;
+  margin: 0 auto;
 }
 
 .intro__btn {
@@ -20,6 +28,7 @@
   box-sizing: border-box;
   border-radius: 29px;
   text-decoration: none;
+  margin: 0 auto;
 }
 
 .intro__list {

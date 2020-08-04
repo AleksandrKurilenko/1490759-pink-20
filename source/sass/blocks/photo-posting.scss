@@ -32,3 +32,24 @@
   width: 280px;
   height: 55px;
 }
+
+.photo-posting {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  padding: 0;
+  margin: 0 auto;
+  background: #f2f2f2;
+
+  @media (min-width: 660px) {
+    width: 620px;
+  }
+
+  @media (min-width: 960px) {
+    width: 940px;
+  }
+}
+
+.photo-posting__wrapper {
+  margin: 0 auto;
+}

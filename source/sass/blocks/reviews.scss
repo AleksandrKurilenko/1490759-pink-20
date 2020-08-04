@@ -1,7 +1,23 @@
+.reviews {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.reviews__item {
+  width: 280px;
+  margin: 0 auto;
+}
+
 .reviews__avtor {
   font-weight: bold;
   text-align: center;
   color: #000000;
+  margin: 0 auto;
+  font-style: normal;
+  width: 280px;
+  padding-left: 55px;
 }
 
 .reviews__content {
@@ -12,6 +28,6 @@
   color: #283645;
 }
 
-.reviews__radio {
+.reviews__radio li {
   list-style: none;
 }

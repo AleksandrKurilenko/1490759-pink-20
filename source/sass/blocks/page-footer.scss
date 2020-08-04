@@ -5,3 +5,21 @@
   color: #283645;
   text-decoration: none;
 }
+
+.page-footer__copyright {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+
+  @media (min-width: 660px) {
+    width: 620px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: 960px) {
+    width: 940px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
