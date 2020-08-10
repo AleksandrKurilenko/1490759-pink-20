@@ -32,3 +32,16 @@
   width: 280px;
   height: 55px;
 }
+
+.photo-posting {
+  background: #f2f2f2;
+}
+
+.photo-posting__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-posting__list {
+  display: flex;
+}

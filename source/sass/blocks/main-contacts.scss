@@ -25,3 +25,15 @@
   text-align: center;
   color: #d22856;
 }
+
+.main-contacts__container {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+  }
+}
