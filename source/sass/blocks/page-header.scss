@@ -1,8 +1,9 @@
 .page-header {
+  background: #283645;
+}
+
+.page-header__container {
   display: flex;
   flex-direction: row;
-  margin: 0 auto;
-  background: #283645;
-  box-shadow: 0 1px 0 #000000;
-  height: 66px;
+  justify-content: space-between;
 }

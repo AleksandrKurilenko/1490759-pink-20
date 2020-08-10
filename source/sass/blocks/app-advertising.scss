@@ -1,18 +1,22 @@
 .app-advertising {
-  display: flex;
-  flex-direction: column;
   background: #f2f2f2;
-  margin: 0 auto;
+}
+
+.app-advertising__container {
+  display: grid;
 }
 
 .app-advertising__items {
+  display: flex;
+  flex-direction: column;
   align-self: center;
-  width: 280px;
-  margin: 0 auto;
-  padding: 0;
   list-style: none;
 
-  @media (min-width: 960px) {
+  @media (min-width: $tablet-width) {
+    grid-column: 2/2;
+  }
+
+  @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -25,8 +29,16 @@
   line-height: 120%;
   text-align: center;
   color: #283645;
-  width: 280px;
-  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 2/2;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .app-advertising__title {
@@ -43,4 +55,17 @@
   line-height: 24px;
   text-align: center;
   color: #283645;
+}
+
+.app-advertising__hidden-img {
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    grid-row: 3/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
 }

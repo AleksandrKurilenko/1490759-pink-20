@@ -1,7 +1,6 @@
 .price {
-  width: 280px;
-  height: 279px;
   background: #f2f2f2;
+  overflow: hidden;
 }
 
 .price__table-title {
@@ -16,6 +15,14 @@
   border-radius: 1px 0 0 0;
 }
 
+.price__value {
+  position: relative;
+  box-sizing: border-box;
+  padding-top: 16px;
+  padding-bottom: 20px;
+  width: 276px;
+}
+
 .price__table-list {
   font-weight: normal;
   font-size: 14px;
@@ -25,5 +32,21 @@
 }
 
 .price__slider-items {
+  display: flex;
   list-style: none;
+  padding: 0;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+.price__cotainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.price__table {
+  transform: translateX(-90px);
 }

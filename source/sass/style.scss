@@ -1,5 +1,7 @@
+@import "variables.scss";
 @import "blocks/fonts.scss";
-@import "blocks/base.scss";
+@import "base.scss";
+@import "container.scss";
 @import "blocks/page-header.scss";
 @import "blocks/main-nav.scss";
 @import "blocks/intro.scss";
@@ -11,8 +13,4 @@
 @import "blocks/main-photo.scss";
 @import "blocks/photo-posting.scss";
 @import "blocks/form.scss";
-@import "blocks/variables.scss";
 @import "blocks/researches.scss";
-@import "blocks/intro--photo.scss";
-@import "blocks/panorama-day.scss";
-@import "blocks/intro__form.scss";

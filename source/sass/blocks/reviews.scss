@@ -1,13 +1,16 @@
 .reviews {
   display: flex;
   flex-direction: column;
-  width: 280px;
   margin: 0 auto;
 }
 
 .reviews__item {
-  width: 280px;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: column-reverse;
+  }
 }
 
 .reviews__avtor {
@@ -30,4 +33,12 @@
 
 .reviews__radio li {
   list-style: none;
+}
+
+.reviews__user {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
 }

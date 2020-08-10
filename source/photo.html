@@ -10,121 +10,125 @@
 
   <body class="page-body">
     <header class="page-header">
-      <a href="index.html" class="page-header__logo">
-        <img src="https://via.placeholder.com/150x150" alt="">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
-        <ul class="main-nav__list site-list">
-          <li class="main-nav__item">
-            <a href="index.html">главная</a>
-          </li>
-          <li class="main-nav__item main-nav__item--active">
-            <a>фотографии</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="form.html">конкурс</a>
-          </li>
-          <li class="main-nav__item">
-            <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
-          </li>
-        </ul>
-      </nav>
+      <div class="page-header__container container">
+        <a href="index.html" class="page-header__logo">
+          <img src="img/logo-pink-white-mobile.svg" alt="">
+        </a>
+        <nav class="main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="main-nav__item">
+              <a href="index.html">главная</a>
+            </li>
+            <li class="main-nav__item main-nav__item--active">
+              <a>фотографии</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="form.html">конкурс</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="page-main">
-      <div class="intro__wrapper">
-        <section class="intro intro--photo">
+      <section class="intro intro--photo">
+        <div class="container">
           <h1 class="intro__title">Фотографии пользователей</h1>
-        </section>
-      </div>
-      <section class="panorama-day">
-        <h2 class="panorama-day__title-invitation">Взгляните на фотографии, которые выкладывают пользователи! Видите,
-          как не хватает
-          ваших?</h2>
-        <img class="panorama-day__panorama" src="https://via.placeholder.com/150x150" alt="">
-        <article class="panorama-day__panorama-caption">
-          <h2 class="panorama-day__title">Анна<span>(5 минут назад)</span>
-          </h2>
-          <p class="panorama-day__content">Прыгать или нет? Напишите в
-            комментарии свой совет и
-            смотрите прямую трансляцию в
-            перископе, задавайте свои вопросы!</p>
-          <div class="panorama-day__like">Нравится:<span>215</span>
-          </div>
-        </article>
+        </div>
       </section>
-      <div class="main-photo__wrapper">
-        <ul class="main-photo">
-          <li class="main-photo__user">
-            <article class="main-photo__caption">
-              <img src="https://via.placeholder.com/150x150" alt="">
-              <h3 class="main-photo__title">Левон<span>(5 часов назад)</span>
-              </h3>
-              <p class="main-photo__content">Вчера он на луну летал, сегодня в<br> руки к нам попал.</p>
-              <div class="main-photo__like">Нравится:<span>356</span>
-              </div>
-            </article>
-          </li>
-          <li class="main-photo__user">
-            <article class="main-photo__caption">
-              <img src="https://via.placeholder.com/150x150" alt="">
-              <h3 class="main-photo__title">Антон<span>(15 часов назад)</span>
-              </h3>
-              <p class="main-photo__content">Соседи будут рады!</p>
-              <div class="main-photo__like">Нравится:<span>666</span>
-              </div>
-            </article>
-          </li>
-          <li class="main-photo__user">
-            <article class="main-photo__caption">
-              <img src="https://via.placeholder.com/150x150" alt="">
-              <h3 class="main-photo__title">Борис<span>(20 часов назад)</span>
-              </h3>
-              <p class="main-photo__content">Здесь могла быть ваша цитата<br> о высоком и вечном.</p>
-              <div class="main-photo__like">Нравится:<span>215</span>
-              </div>
-            </article>
-          </li>
-          <li class="main-photo__user">
-            <article class="main-photo__caption">
-              <img src="https://via.placeholder.com/150x150" alt="">
-              <h3 class="main-photo__title">Сергей<span>(25 часов назад)</span>
-              </h3>
-              <p class="main-photo__content">Самая кубанская в мире!</p>
-              <div class="main-photo__like">Нравится:<span>4</span>
-              </div>
-            </article>
-          </li>
-          <li class="main-photo__user">
-            <article class="main-photo__caption">
-              <img src="https://via.placeholder.com/150x150" alt="">
-              <h3 class="main-photo__title">Максим<span>(40 часов назад)</span>
-              </h3>
-              <p class="main-photo__content">Где снег-то?</p>
-              <div class="main-photo__like">Нравится:<span>150</span>
-              </div>
-            </article>
-          </li>
-          <li class="main-photo__user">
-            <article class="main-photo__caption">
-              <img src="https://via.placeholder.com/150x150" alt="">
-              <h3 class="main-photo__title">Надежда<span>(40 часов назад)</span>
-              </h3>
-              <p class="main-photo__content">Всем GM и взаимные лайки!</p>
-              <div class="main-photo__like">Нравится:<span>2560</span>
-              </div>
-            </article>
-          </li>
-        </ul>
-      </div>
-      <div class="photo-posting__wrapper">
-        <section class="photo-posting">
+      <section class="main-photo">
+        <div class="main-photo__container container">
+          <h2 class="main-photo__title-invitation">Взгляните на фотографии, которые выкладывают пользователи! Видите,
+            как не хватает
+            ваших?</h2>
+          <ul class="main-photo__list">
+            <li class="main-photo__panorama-item">
+              <article class="main-photo__panorama-caption">
+                <img class="main-photo__panorama" src="img/panorama-mobile@1x.jpg" alt="">
+                <h2 class="main-photo__title">Анна<span>(5 минут назад)</span>
+                </h2>
+                <p class="main-photo__content">Прыгать или нет? Напишите в
+                  комментарии свой совет и
+                  смотрите прямую трансляцию в
+                  перископе, задавайте свои вопросы!</p>
+                <div class="main-photo__like">Нравится:<span>215</span>
+                </div>
+              </article>
+            </li>
+            <li class="main-photo__user">
+              <article class="main-photo__caption">
+                <img src="img/photo-car-mobile@1x.jpg" alt="">
+                <h3 class="main-photo__title">Левон<span>(5 часов назад)</span>
+                </h3>
+                <p class="main-photo__content">Вчера он на луну летал, сегодня в<br> руки к нам попал.</p>
+                <div class="main-photo__like">Нравится:<span>356</span>
+                </div>
+              </article>
+            </li>
+            <li class="main-photo__user">
+              <article class="main-photo__caption">
+                <img src="img/photo-drumset-mobile@1x.jpg" alt="">
+                <h3 class="main-photo__title">Антон<span>(15 часов назад)</span>
+                </h3>
+                <p class="main-photo__content">Соседи будут рады!</p>
+                <div class="main-photo__like">Нравится:<span>666</span>
+                </div>
+              </article>
+            </li>
+            <li class="main-photo__user">
+              <article class="main-photo__caption">
+                <img src="img/photo-window-mobile@1x.jpg" alt="">
+                <h3 class="main-photo__title">Борис<span>(20 часов назад)</span>
+                </h3>
+                <p class="main-photo__content">Здесь могла быть ваша цитата<br> о высоком и вечном.</p>
+                <div class="main-photo__like">Нравится:<span>215</span>
+                </div>
+              </article>
+            </li>
+            <li class="main-photo__user">
+              <article class="main-photo__caption">
+                <img src="img/photo-fair-mobile@1x.jpg" alt="">
+                <h3 class="main-photo__title">Сергей<span>(25 часов назад)</span>
+                </h3>
+                <p class="main-photo__content">Самая кубанская в мире!</p>
+                <div class="main-photo__like">Нравится:<span>4</span>
+                </div>
+              </article>
+            </li>
+            <li class="main-photo__user">
+              <article class="main-photo__caption">
+                <img src="img/photo-pov-mobile@1x.jpg" alt="">
+                <h3 class="main-photo__title">Максим<span>(40 часов назад)</span>
+                </h3>
+                <p class="main-photo__content">Где снег-то?</p>
+                <div class="main-photo__like">Нравится:<span>150</span>
+                </div>
+              </article>
+            </li>
+            <li class="main-photo__user">
+              <article class="main-photo__caption">
+                <img src="img/photo-wing-mobile@1x.jpg" alt="">
+                <h3 class="main-photo__title">Надежда<span>(40 часов назад)</span>
+                </h3>
+                <p class="main-photo__content">Всем GM и взаимные лайки!</p>
+                <div class="main-photo__like">Нравится:<span>2560</span>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="photo-posting">
+        <div class="photo-posting__container container">
           <h2 class="visually-hidden">загрузка фотографий пользователя</h2>
           <p class="photo-posting__content">Затмите их всех!<br>Выкладывайтевсе,что накопилось в телефоне!</p>
           <form class="photo-posting__form" action="https://echo.htmlacademy.ru" method="post">
-            <img src="https://via.placeholder.com/150x150" alt="">
+            <img src="img/photo-road-mobile@1x.jpg" alt="">
             <button class="photo-posting__button photo-posting__button--submit" type="submit"
               value="Запостить">Запостить</button>
             <button class="photo-posting__button photo-posting__button--reset" type="reset"
@@ -148,18 +152,23 @@
             </li>
           </ul>
           <input class="photo-posting__slider" type="range">
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__copyright">
-        <a href="index.html" class="page-footer__logo"><img src="https://via.placeholder.com/150x150" alt=""></a>
+    <footer class="page-footer container">
+      <div class="page-footer__copyright container">
+        <a href="index.html" class="page-footer__logo"><img src="img/logo-pink-blue-mobile.svg" alt="" width="145"
+            height="40"></a>
         <ul class="page-footer__social-links">
-          <li><a href="#" class="page-footer__icon page-footer__icon--twitter"></a></li>
-          <li><a href="#" class="page-footer__icon page-footer__icon--facebook"></a></li>
-          <li><a href="#" class="page-footer__icon page-footer__icon--youtube"></a></li>
+          <li><a href="#" class="page-footer__icon page-footer__icon--twitter"><img src="img/icon-twitter.svg"
+                alt=""></a></li>
+          <li><a href="#" class="page-footer__icon page-footer__icon--facebook"><img src="img/icon-facebook.svg"
+                alt=""></a></li>
+          <li><a href="#" class="page-footer__icon page-footer__icon--youtube"><img src="img/icon-youtube.svg"
+                alt=""></a></li>
         </ul>
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru">Разработано</a>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru">Разработано<img src="img/htmlacademy.svg"
+            alt="" width="27" height="34"></a>
       </div>
     </footer>
   </body>

@@ -1,23 +1,5 @@
-.main-photo {
+.main-photo__container {
   list-style: none;
-  display: grid;
-  width: 280px;
-  padding: 0;
-  margin: 0 auto;
-
-  @media (min-width: 660px) {
-    display: grid;
-    width: 620px;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  @media (min-width: 960px) {
-    display: grid;
-    width: 940px;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-  }
 }
 
 .main-photo__title {
@@ -28,7 +10,7 @@
   color: #283645;
 
   span {
-    font-weight: 300;
+    font-weight: 300px;
     font-size: 12px;
     line-height: 24px;
     text-transform: uppercase;
@@ -44,7 +26,7 @@
 }
 
 .main-photo__like,
-span {
+.main-photo__like span {
   font-weight: normal;
   font-size: 12px;
   line-height: 24px;
@@ -54,19 +36,65 @@ span {
 }
 
 .main-photo__caption {
-  width: 280px;
   background: #f2f2f2;
+}
 
-  @media (min-width: 660px) {
-    width: 300px;
+.main-photo__panorama {
+  width: 100%;
+}
+
+.main-photo__panorama-caption {
+  background: #f2f2f2;
+  margin: 0 auto;
+}
+
+.main-photo__panorama-user {
+  justify-self: stretch;
+}
+
+.main-photo__title-invitation {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+  color: #283645;
+
+  @media (min-width: $tablet-width) {
+    width: 440px;
+    font-size: 18px;
   }
 
-  @media (min-width: 960px) {
-    width: 300px;
+  @media (min-width: $desktop-width) {
+    width: 460px;
+    font-size: 18px;
   }
 }
 
-.main-photo__wrapper {
-  margin: 0 auto;
-  width: 940px;
+.main-photo__list {
+  display: grid;
+  list-style: none;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+.main-photo__panorama-item {
+  grid-column: 1/1;
+
+  @media (min-width: $tablet-width) {
+    grid-column: 1/3;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1/4;
+  }
 }
