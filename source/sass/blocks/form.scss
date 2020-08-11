@@ -129,6 +129,12 @@
     grid-row: 2/6;
     grid-column: 1/2;
   }
+
+  .form__list {
+    @media (min-width: $desktop-width) {
+      display: flex;
+    }
+  }
 }
 
 .form__field-emotions {
