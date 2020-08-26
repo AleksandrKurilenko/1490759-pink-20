@@ -4,21 +4,22 @@
   line-height: 18px;
   color: #283645;
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .page-footer__copyright {
   display: flex;
   flex-direction: column;
-  width: 300px;
+  align-items: center;
+  padding-top: 80px;
 
-  @media (min-width: 660px) {
-    width: 620px;
+  @media (min-width: $tablet-width) {
     flex-direction: row;
     justify-content: space-between;
   }
 
-  @media (min-width: 960px) {
-    width: 940px;
+  @media (min-width: $desktop-width) {
     flex-direction: row;
     justify-content: space-between;
   }
@@ -29,4 +30,11 @@
   flex-direction: row;
   justify-content: space-between;
   list-style: none;
+  padding-left: 0;
+  margin-top: 44px;
+  margin-bottom: 50px;
+}
+
+.page-footer__item-facebook {
+  padding: 0 50px;
 }
