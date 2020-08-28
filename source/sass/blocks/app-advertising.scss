@@ -22,7 +22,9 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 138px;
+    gap: 51px;
+    padding: 0;
+    align-items: baseline;
   }
 }
 
@@ -35,6 +37,7 @@
 
   @media (min-width: $tablet-width) {
     text-align: left;
+    margin-top: 44px;
   }
 
   @media (min-width: $desktop-width) {
@@ -99,4 +102,20 @@
       display: none;
     }
   }
+}
+
+.app-advertising__container {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.app-advertising__paragraph {
+  min-width: 255px;
 }

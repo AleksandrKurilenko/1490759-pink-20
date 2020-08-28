@@ -316,7 +316,7 @@
 }
 
 .form__checkbox:checked {
-  + .form__label-checkbox::after {
+  & + .form__label-checkbox::after {
     content: "";
     position: absolute;
     margin: auto;

@@ -10,6 +10,10 @@
   text-align: center;
   background: #f2f2f2;
   clip-path: polygon(0 calc(12% - 24px), 100% 0, 100% 100%, 0 100%);
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 0 102px;
+  }
 }
 
 .price input[type="radio"],
@@ -44,20 +48,17 @@
   height: 6px;
   margin: 0 6px;
   vertical-align: top;
-  background: #bec2c7;
+  background: #283645;
+  opacity: 0.3;
   border: solid 3px #f2f2f2;
   border-radius: 50%;
   cursor: pointer;
 }
 
 .price__controls label:hover {
-  background: #7e868f;
+  background: #283645;
+  opacity: 0.6;
 }
-
-.price__controls label:active {
-  background: #e9ebec;
-}
-
 
 .price__wrapper {
   overflow: hidden;
@@ -68,6 +69,7 @@
   border-collapse: collapse;
   box-sizing: border-box;
   transition: all 0.5s;
+  transform: translateX(-30%);
 
   @media (min-width: $tablet-width) {
     width: 100%;
@@ -236,5 +238,36 @@ th.price-table__cell:first-child {
     font-size: 18px;
     line-height: 30px;
     font-weight: 300;
+  }
+}
+
+.btn-price-1:checked ~ .price__controls label[for="btn-price-1"],
+.btn-price-2:checked ~ .price__controls label[for="btn-price-2"],
+.btn-price-3:checked ~ .price__controls label[for="btn-price-3"] {
+  background: #ffffff;
+  border: solid 3px #283645;
+}
+
+.btn-price-1:checked ~ .price__wrapper .price-table {
+  transform: translateX(23px);
+
+  @media (min-width: 660px) {
+    transform: none;
+  }
+}
+
+.btn-price-2:checked ~ .price__wrapper .price-table {
+  transform: translateX(calc(-33.333333% + 23px));
+
+  @media (min-width: 660px) {
+    transform: none;
+  }
+}
+
+.btn-price-3:checked ~ .price__wrapper .price-table {
+  transform: translateX(calc(-66.666666% + 24px));
+
+  @media (min-width: 660px) {
+    transform: none;
   }
 }

@@ -12,13 +12,15 @@
     <header class="page-header">
       <div class="page-header__background">
         <div class="page-header__container container">
-          <a href="index.html" class="page-header__logo">
-            <img src="img/logo-pink-white-mobile.svg" alt="">
-          </a>
-          <nav class="main-nav">
-            <button class="main-nav__toggle" type="button">
-              <span class="visually-hidden">Открыть меню</span>
+          <div class="page-header__top">
+            <a class="page-header__logo">
+              <img src="img/logo-pink-white-mobile.svg" alt="">
+            </a>
+            <button class="page-header__toggle" type="button">
+              <span class="page-header__icon"></span>
             </button>
+          </div>
+          <nav class="main-nav">
             <ul class="main-nav__list site-list">
               <li class="main-nav__item main-nav__item-index">
                 <a href="index.html">главная</a>
@@ -119,7 +121,7 @@
                 <h3 class="main-photo__title">Надежда<span>(40 часов назад)</span>
                 </h3>
                 <p class="main-photo__content">Всем GM и взаимные лайки!</p>
-                <div class="main-photo__like-block"><span class="main-photo__like">Нравится:</span>
+                <div class="main-photo__like"><span>Нравится:</span>
                   <span class="main-photo__like-value">2560</span>
                 </div>
               </article>
@@ -129,7 +131,7 @@
       </section>
       <div class="download-title">
         <div class="download-title__container container">
-          <p class="download-title__content">Затмите их всех!<br>Выкладывайтевсе,что накопилось в телефоне!</p>
+          <p class="download-title__content">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
         </div>
       </div>
       <section class="photo-posting">
@@ -139,14 +141,14 @@
             <img class="photo-posting__img" src="img/photo-road-mobile@1x.jpg" alt="">
             <div>
               <ul class="photo-posting__list">
-                <li>
+                <li class="photo-posting__item">
                   <img src="img/icon-editor-crop.svg" alt="">
                   <div class="photo-posting__controls-crop">
                     <div class="photo-posting__controls-bar"></div>
                     <div class="photo-posting__controls-toggle"></div>
                   </div>
                 </li>
-                <li>
+                <li class="photo-posting__item">
                   <img src="img/icon-editor-fill.svg" alt="">
                   <div class="photo-posting__controls-fill">
                     <div class="photo-posting__controls-bar"></div>
@@ -156,7 +158,7 @@
                     type="radio" name="radio-button">
                   <label class="photo-posting__control" for="photo-posting__radio-button2"></label>
                 </li>
-                <li>
+                <li class="photo-posting__item">
                   <img src="img/icon-editor-contrast.svg" alt="">
                   <div class="photo-posting__controls-contrast">
                     <div class="photo-posting__controls-bar"></div>

@@ -40,10 +40,10 @@
   text-align: right;
   text-transform: uppercase;
   color: #d22856;
+}
 
-  .span {
-    padding-left: 4px;
-  }
+.span {
+  padding-left: 4px;
 }
 
 .main-photo__caption {
@@ -71,6 +71,23 @@
   align-items: flex-start;
   margin-bottom: 20px;
   padding-bottom: 20px;
+
+  @media (min-width: $tablet-width) {
+    position: relative;
+  }
+
+  .main-photo__like {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      margin: auto;
+      top: 576px;
+      bottom: auto;
+      left: auto;
+      right: 23px;
+      width: 135px;
+    }
+  }
 }
 
 .main-photo__panorama-user {

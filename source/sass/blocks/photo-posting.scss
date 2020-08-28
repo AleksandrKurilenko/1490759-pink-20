@@ -51,9 +51,15 @@
     flex-direction: column;
   }
 
-  li {
+  .photo-posting__item {
     @media (min-width: $tablet-width) {
       display: flex;
+      width: 275px;
+      padding: 20px 18px 22px 0;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #dddfe0;
+      margin-bottom: 10px;
     }
   }
 }
