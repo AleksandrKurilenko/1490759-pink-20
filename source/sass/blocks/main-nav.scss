@@ -3,15 +3,37 @@
   margin: 0;
   padding: 0;
   list-style: none;
+  width: 100%;
+  text-align: center;
+  background: #283645;
 
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    background-color: transparent;
   }
 }
 
 .main-nav__item {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  padding: 15px 0;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000001;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    padding-left: 71px;
+  }
+
   a {
     color: #ffffff;
     font-weight: bold;
@@ -19,11 +41,15 @@
     line-height: 32px;
     text-transform: uppercase;
     text-decoration: none;
+
+    @media (min-width: $desktop-width) {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 18px;
+    }
   }
 }
 
-.main-nav__toggle {
-  @media (min-width: $desktop-width) {
-    display: none;
-  }
+.main-nav__item-academy {
+  padding-right: 0;
 }

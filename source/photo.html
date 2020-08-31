@@ -10,40 +10,45 @@
 
   <body class="page-body">
     <header class="page-header">
-      <div class="page-header__container container">
-        <a href="index.html" class="page-header__logo">
-          <img src="img/logo-pink-white-mobile.svg" alt="">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <ul class="main-nav__list site-list">
-            <li class="main-nav__item">
-              <a href="index.html">главная</a>
-            </li>
-            <li class="main-nav__item main-nav__item--active">
-              <a>фотографии</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="form.html">конкурс</a>
-            </li>
-            <li class="main-nav__item">
-              <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
+      <div class="page-header__background">
+        <div class="page-header__container container">
+          <div class="page-header__top">
+            <a class="page-header__logo">
+              <img src="img/logo-pink-white-mobile.svg" alt="">
+            </a>
+            <button class="page-header__toggle" type="button">
+              <span class="page-header__icon"></span>
+            </button>
+          </div>
+          <nav class="main-nav">
+            <ul class="main-nav__list site-list">
+              <li class="main-nav__item main-nav__item-index">
+                <a href="index.html">главная</a>
+              </li>
+              <li class="main-nav__item main-nav__item--active main-nav__item-photo">
+                <a>фотографии</a>
+              </li>
+              <li class="main-nav__item main-nav__item-form">
+                <a href="form.html">конкурс</a>
+              </li>
+              <li class="main-nav__item main-nav__item-academy">
+                <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </header>
-    <main class="page-main">
       <section class="intro intro--photo">
         <div class="container">
           <h1 class="intro__title">Фотографии пользователей</h1>
         </div>
       </section>
+    </header>
+    <main class="page-main">
       <section class="main-photo">
         <div class="main-photo__container container">
-          <h2 class="main-photo__title-invitation">Взгляните на фотографии, которые выкладывают пользователи! Видите,
+          <h2 class="main-photo__title-invitation">Взгляните на фотографии, которые выкладывают пользователи!<br>
+            Видите,
             как не хватает
             ваших?</h2>
           <ul class="main-photo__list">
@@ -53,10 +58,10 @@
                 <h2 class="main-photo__title">Анна<span>(5 минут назад)</span>
                 </h2>
                 <p class="main-photo__content">Прыгать или нет? Напишите в
-                  комментарии свой совет и
+                  комментарии свой совет и<br>
                   смотрите прямую трансляцию в
                   перископе, задавайте свои вопросы!</p>
-                <div class="main-photo__like">Нравится:<span>215</span>
+                <div class="main-photo__like"><span>Нравится:</span><span class="main-photo__like-value">215</span>
                 </div>
               </article>
             </li>
@@ -66,7 +71,7 @@
                 <h3 class="main-photo__title">Левон<span>(5 часов назад)</span>
                 </h3>
                 <p class="main-photo__content">Вчера он на луну летал, сегодня в<br> руки к нам попал.</p>
-                <div class="main-photo__like">Нравится:<span>356</span>
+                <div class="main-photo__like"><span>Нравится:</span><span class="main-photo__like-value">356</span>
                 </div>
               </article>
             </li>
@@ -76,7 +81,7 @@
                 <h3 class="main-photo__title">Антон<span>(15 часов назад)</span>
                 </h3>
                 <p class="main-photo__content">Соседи будут рады!</p>
-                <div class="main-photo__like">Нравится:<span>666</span>
+                <div class="main-photo__like"><span>Нравится:</span><span class="main-photo__like-value">666</span>
                 </div>
               </article>
             </li>
@@ -86,7 +91,7 @@
                 <h3 class="main-photo__title">Борис<span>(20 часов назад)</span>
                 </h3>
                 <p class="main-photo__content">Здесь могла быть ваша цитата<br> о высоком и вечном.</p>
-                <div class="main-photo__like">Нравится:<span>215</span>
+                <div class="main-photo__like"><span>Нравится:</span><span class="main-photo__like-value">215</span>
                 </div>
               </article>
             </li>
@@ -96,7 +101,7 @@
                 <h3 class="main-photo__title">Сергей<span>(25 часов назад)</span>
                 </h3>
                 <p class="main-photo__content">Самая кубанская в мире!</p>
-                <div class="main-photo__like">Нравится:<span>4</span>
+                <div class="main-photo__like"><span>Нравится:</span><span class="main-photo__like-value">4</span>
                 </div>
               </article>
             </li>
@@ -106,7 +111,7 @@
                 <h3 class="main-photo__title">Максим<span>(40 часов назад)</span>
                 </h3>
                 <p class="main-photo__content">Где снег-то?</p>
-                <div class="main-photo__like">Нравится:<span>150</span>
+                <div class="main-photo__like"><span>Нравится:</span><span class="main-photo__like-value">150</span>
                 </div>
               </article>
             </li>
@@ -116,59 +121,83 @@
                 <h3 class="main-photo__title">Надежда<span>(40 часов назад)</span>
                 </h3>
                 <p class="main-photo__content">Всем GM и взаимные лайки!</p>
-                <div class="main-photo__like">Нравится:<span>2560</span>
+                <div class="main-photo__like"><span>Нравится:</span>
+                  <span class="main-photo__like-value">2560</span>
                 </div>
               </article>
             </li>
           </ul>
         </div>
       </section>
+      <div class="download-title">
+        <div class="download-title__container container">
+          <p class="download-title__content">Затмите их всех!<br>Выкладывайте все, что накопилось в телефоне!</p>
+        </div>
+      </div>
       <section class="photo-posting">
         <div class="photo-posting__container container">
           <h2 class="visually-hidden">загрузка фотографий пользователя</h2>
-          <p class="photo-posting__content">Затмите их всех!<br>Выкладывайтевсе,что накопилось в телефоне!</p>
           <form class="photo-posting__form" action="https://echo.htmlacademy.ru" method="post">
-            <img src="img/photo-road-mobile@1x.jpg" alt="">
-            <button class="photo-posting__button photo-posting__button--submit" type="submit"
-              value="Запостить">Запостить</button>
-            <button class="photo-posting__button photo-posting__button--reset" type="reset"
-              value="Отмена">Отмена</button>
+            <img class="photo-posting__img" src="img/photo-road-mobile@1x.jpg" alt="">
+            <div>
+              <ul class="photo-posting__list">
+                <li class="photo-posting__item">
+                  <img src="img/icon-editor-crop.svg" alt="">
+                  <div class="photo-posting__controls-crop">
+                    <div class="photo-posting__controls-bar"></div>
+                    <div class="photo-posting__controls-toggle"></div>
+                  </div>
+                </li>
+                <li class="photo-posting__item">
+                  <img src="img/icon-editor-fill.svg" alt="">
+                  <div class="photo-posting__controls-fill">
+                    <div class="photo-posting__controls-bar"></div>
+                    <div class="photo-posting__controls-toggle"></div>
+                  </div>
+                  <input class="photo-posting__radio-input visually-hidden" id="photo-posting__radio-button2"
+                    type="radio" name="radio-button">
+                  <label class="photo-posting__control" for="photo-posting__radio-button2"></label>
+                </li>
+                <li class="photo-posting__item">
+                  <img src="img/icon-editor-contrast.svg" alt="">
+                  <div class="photo-posting__controls-contrast">
+                    <div class="photo-posting__controls-bar"></div>
+                    <div class="photo-posting__controls-toggle"></div>
+                  </div>
+                  <input class="photo-posting__radio-input visually-hidden" id="photo-posting__radio-button3"
+                    type="radio" name="radio-button">
+                  <label class="photo-posting__control" for="photo-posting__radio-button3"></label>
+                </li>
+              </ul>
+              <div class="photo-posting__controls photo-posting__controls-mobile">
+                <div class="photo-posting__controls-bar"></div>
+                <div class="photo-posting__controls-toggle"></div>
+              </div>
+            </div>
+            <div class="photo-posting__button-container">
+              <button class="photo-posting__button photo-posting__button--submit" type="submit"
+                value="Запостить">Запостить</button>
+              <button class="photo-posting__button photo-posting__button--reset" type="reset"
+                value="Отмена">Отмена</button>
+            </div>
           </form>
-          <ul class="photo-posting__list">
-            <li>
-              <input class="photo-posting__radio-input visually-hidden" id="photo-posting__radio-button1" type="radio"
-                name="radio-button" checked>
-              <label class="photo-posting__control" for="photo-posting__radio-button1"></label>
-            </li>
-            <li>
-              <input class="photo-posting__radio-input visually-hidden" id="photo-posting__radio-button2" type="radio"
-                name="radio-button">
-              <label class="photo-posting__control" for="photo-posting__radio-button2"></label>
-            </li>
-            <li>
-              <input class="photo-posting__radio-input visually-hidden" id="photo-posting__radio-button3" type="radio"
-                name="radio-button">
-              <label class="photo-posting__control" for="photo-posting__radio-button3"></label>
-            </li>
-          </ul>
-          <input class="photo-posting__slider" type="range">
         </div>
       </section>
     </main>
-    <footer class="page-footer container">
+    <footer class="page-footer">
       <div class="page-footer__copyright container">
         <a href="index.html" class="page-footer__logo"><img src="img/logo-pink-blue-mobile.svg" alt="" width="145"
             height="40"></a>
         <ul class="page-footer__social-links">
           <li><a href="#" class="page-footer__icon page-footer__icon--twitter"><img src="img/icon-twitter.svg"
                 alt=""></a></li>
-          <li><a href="#" class="page-footer__icon page-footer__icon--facebook"><img src="img/icon-facebook.svg"
-                alt=""></a></li>
+          <li class="page-footer__item-facebook"><a href="#" class="page-footer__icon page-footer__icon--facebook"><img
+                src="img/icon-facebook.svg" alt=""></a></li>
           <li><a href="#" class="page-footer__icon page-footer__icon--youtube"><img src="img/icon-youtube.svg"
                 alt=""></a></li>
         </ul>
-        <a class="page-footer__copyright-link" href="https://htmlacademy.ru">Разработано<img src="img/htmlacademy.svg"
-            alt="" width="27" height="34"></a>
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru" target="_blank">Разработано<img
+            src="img/htmlacademy.svg" alt="" width="37" height="44"></a>
       </div>
     </footer>
   </body>

@@ -1,9 +1,7 @@
 .app-advertising {
   background: #f2f2f2;
-}
-
-.app-advertising__container {
-  display: grid;
+  margin-bottom: -34px;
+  clip-path: polygon(0 calc(7% - 19px), 100% 1%, 100% 100%, 0 100%);
 }
 
 .app-advertising__items {
@@ -11,33 +9,22 @@
   flex-direction: column;
   align-self: center;
   list-style: none;
+  padding-top: 53px;
+  padding-left: 0;
 
   @media (min-width: $tablet-width) {
     grid-column: 2/2;
+    width: 390px;
+    padding-top: 3px;
+    padding-left: 83px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-.app-advertising__slogan {
-  font-weight: 300;
-  font-size: 24px;
-  line-height: 120%;
-  text-align: center;
-  color: #283645;
-
-  @media (min-width: $tablet-width) {
-    grid-column: 2/2;
-  }
-
-  @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 51px;
+    padding: 0;
+    align-items: baseline;
   }
 }
 
@@ -47,6 +34,17 @@
   line-height: 24px;
   text-align: center;
   color: #000000;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+    margin-top: 44px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+  }
 }
 
 .app-advertising__content {
@@ -55,6 +53,14 @@
   line-height: 24px;
   text-align: center;
   color: #283645;
+
+  @media (min-width: $tablet-width) {
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: center;
+  }
 }
 
 .app-advertising__hidden-img {
@@ -62,10 +68,54 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    grid-row: 3/3;
+    grid-row: 1/2;
+    grid-column: 1/2;
   }
 
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.app-advertising__title-mood {
+  margin-bottom: 0;
+}
+
+.app-advertising__title-world {
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.app-advertising__content-world {
+  margin-top: 12px;
+}
+
+.app-advertising__title-friends {
+  margin-bottom: 0;
+}
+
+.app-advertising__content-friends {
+  margin-top: 11px;
+
+  @media (min-width: $tablet-width) {
+    br {
+      display: none;
+    }
+  }
+}
+
+.app-advertising__container {
+  display: grid;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.app-advertising__paragraph {
+  min-width: 255px;
 }
