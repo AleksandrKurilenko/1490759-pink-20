@@ -53,6 +53,10 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+
+  @media (min-width: $desktop-width) {
+    min-height: 546px;
+  }
 }
 
 .main-photo__panorama {
@@ -61,6 +65,15 @@
   max-width: none;
   left: 50%;
   transform: translateX(-50%);
+
+  @media (min-width: $tablet-width) {
+    left: 46%;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 50%;
+    transform: translateX(-62%);
+  }
 }
 
 .main-photo__panorama-caption {
@@ -87,6 +100,45 @@
       right: 23px;
       width: 135px;
     }
+  }
+}
+
+.main-photo__panorama-caption::after {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  bottom: auto;
+  left: auto;
+  right: 6.25%;
+  content: "Панорама дня";
+  width: 140px;
+  height: 36px;
+  font-size: 12px;
+  line-height: 36px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  background: #d22856;
+  color: #ffffff;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    margin: auto;
+    top: 57px;
+    bottom: auto;
+    left: auto;
+    right: 5.85%;
+    content: "Панорама дня";
+  }
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    margin: auto;
+    top: 54px;
+    bottom: auto;
+    left: auto;
+    right: 10.75%;
+    content: "Панорама дня";
   }
 }
 

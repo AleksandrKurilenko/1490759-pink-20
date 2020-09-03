@@ -80,3 +80,27 @@
     display: none;
   }
 }
+
+.reviews__radio-input {
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+}
+
+.reviews__radio-control {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin: 0 6px;
+  vertical-align: top;
+  background: #bec2c7;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.reviews__radio-input1:checked ~ .reviews__radio-control1,
+.reviews__radio-input1:checked ~ .reviews__radio-control2,
+.reviews__radio-input1:checked ~ .reviews__radio-control3 {
+  background: #ffffff;
+  border: solid 3px #283645;
+}
