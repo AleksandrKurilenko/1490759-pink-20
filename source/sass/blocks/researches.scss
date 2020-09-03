@@ -33,6 +33,12 @@
   padding-top: 123px;
   margin-bottom: 8px;
   padding-left: 56px;
+
+  @media (min-width: $desktop-width) {
+    br {
+      display: none;
+    }
+  }
 }
 
 .researches__content {

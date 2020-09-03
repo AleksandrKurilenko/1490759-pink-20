@@ -9,27 +9,27 @@
   </head>
 
   <body class="page-body">
-    <header class="page-header">
+    <header class="page-header page-header__open-form">
       <div class="page-header__background">
         <div class="page-header__container container">
           <div class="page-header__top">
             <a class="page-header__logo">
               <img src="img/logo-pink-white-mobile.svg" alt="">
             </a>
-            <button class="page-header__toggle" type="button">
+            <button class="page-header__toggle page-header__toggle-close" type="button">
               <span class="page-header__icon"></span>
             </button>
           </div>
           <nav class="main-nav">
             <ul class="main-nav__list site-list">
               <li class="main-nav__item main-nav__item-index">
-                <a href="index.html">главная</a>
+                <a href="index.html">Главная</a>
               </li>
               <li class="main-nav__item main-nav__item-photo">
-                <a href="photo.html">фотографии</a>
+                <a href="photo.html">Фотографии</a>
               </li>
               <li class="main-nav__item main-nav__item--active main-nav__item-form">
-                <a>конкурс</a>
+                <a>Конкурс</a>
               </li>
               <li class="main-nav__item main-nav__item-academy">
                 <a href="https://htmlacademy.ru" target="_blank">HTML Academy</a>
@@ -70,8 +70,8 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form__fieldset form__fieldset-survey">
-              <div class="form__survey-container">
+            <div class="form__survey-container">
+              <fieldset class="form__fieldset-survey">
                 <legend class="form__title">Ваши безбашенные<br> достижения в путешествии</legend>
                 <ul class="form__list">
                   <li class="form__list-item form__list-item1">
@@ -93,8 +93,8 @@
                     <input class="form__checkbox" type="checkbox" name="hotel" id="hotel">
                     <label class="form__label form__label-checkbox" for="hotel">Разгромил отель</label></li>
                 </ul>
-              </div>
-            </fieldset>
+              </fieldset>
+            </div>
             <fieldset class="form__fieldset form__fieldset-contacts">
               <legend class="form__title form__title-contacts">Контактная информация</legend>
               <ul class="form__list">

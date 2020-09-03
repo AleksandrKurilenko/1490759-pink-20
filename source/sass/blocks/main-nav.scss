@@ -12,6 +12,7 @@
     flex-direction: row;
     justify-content: space-between;
     background-color: transparent;
+    padding-right: 100px;
   }
 }
 
@@ -32,6 +33,9 @@
   @media (min-width: $desktop-width) {
     border: none;
     padding-left: 71px;
+    text-transform: none;
+    font-weight: normal;
+    line-height: 18px;
   }
 
   a {
@@ -39,7 +43,6 @@
     font-weight: bold;
     font-size: 18px;
     line-height: 32px;
-    text-transform: uppercase;
     text-decoration: none;
 
     @media (min-width: $desktop-width) {

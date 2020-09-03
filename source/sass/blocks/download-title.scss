@@ -4,8 +4,19 @@
   line-height: 30px;
   text-align: center;
   color: #283645;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
 }
 
 .download-title {
   padding-bottom: 33px;
+}
+
+.download-title__container {
+  @media (min-width: $tablet-width) {
+    margin-top: 60px;
+    margin-bottom: 38px;
+  }
 }
