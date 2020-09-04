@@ -8,11 +8,12 @@
   background: #283645;
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     background-color: transparent;
-    padding-right: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 10 1 auto;
+    justify-content: flex-end;
+    padding: 30px 0 10px 14px;
   }
 }
 
@@ -55,4 +56,10 @@
 
 .main-nav__item-academy {
   padding-right: 0;
+
+  @media (min-width: $desktop-width) {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+  }
 }
