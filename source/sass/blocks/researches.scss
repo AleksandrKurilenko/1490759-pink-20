@@ -3,11 +3,15 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     width: 940px;
+    margin: 0 auto;
+    padding: 0;
   }
 }
 
@@ -15,11 +19,21 @@
   grid-row: 1/1;
   grid-column: 1/2;
   padding-top: 81px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 54px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 298px;
+    padding-top: 32px;
+  }
 }
 
 .researches__info-block {
   grid-row: 1/1;
   grid-column: 2/2;
+  position: relative;
 }
 
 .researches__title {
@@ -30,11 +44,15 @@
   line-height: 36px;
   color: #000000;
   text-align: left;
-  padding-top: 123px;
+  padding-top: 71px;
   margin-bottom: 8px;
   padding-left: 56px;
 
   @media (min-width: $desktop-width) {
+    padding-top: 100px;
+    margin-bottom: 24px;
+    padding-left: 14px;
+
     br {
       display: none;
     }
@@ -50,9 +68,27 @@
   padding-left: 56px;
   text-align: left;
   margin-top: 0;
+  margin-bottom: 7px;
+
+  .researches__content-br {
+    display: none;
+  }
 
   @media (min-width: $desktop-width) {
-    width: 400px;
+    width: 538px;
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 11px;
+    margin-right: -14px;
+    margin-bottom: 28px;
+
+    .researches__content-br {
+      display: block;
+    }
+
+    br {
+      display: none;
+    }
   }
 }
 
@@ -63,4 +99,42 @@
   line-height: 24px;
   text-decoration-line: underline;
   color: #d22856;
+  padding-left: 57px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+    line-height: 30px;
+    padding-left: 14px;
+  }
+}
+
+.researches__info-block::after {
+  content: "24";
+  width: 200px;
+  height: 200px;
+  font-size: 96px;
+  line-height: 165px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  color: #d22856;
+  border: 15px solid #d22856;
+  border-radius: 50%;
+  transform: translate(9%, 7%);
+  position: absolute;
+  top: 96px;
+  bottom: auto;
+  left: -252px;
+  right: auto;
+  z-index: 10;
+
+  @media (min-width: $desktop-width) {
+    width: 250px;
+    height: 250px;
+    font-size: 120px;
+    line-height: 211px;
+    font-weight: 700;
+    top: 85px;
+    left: -354px;
+  }
 }

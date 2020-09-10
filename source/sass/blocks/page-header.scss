@@ -29,21 +29,20 @@
 }
 
 .page-header__background {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 .page-header__container {
   padding-left: 0;
   padding-right: 0;
   width: 100%;
+  margin: 0 auto;
 
   @media (min-width: $desktop-width) {
     display: flex;
     width: 100%;
     max-width: 940px;
     margin: 0 auto;
-    padding-right: 10px;
-    padding-left: 10px;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -96,29 +95,34 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 30px 20px;
+  padding: 20px 20px 20px;
   border-bottom: 1px solid #000001;
   cursor: pointer;
   background: #283645;
 
   @media (min-width: $tablet-width) {
-    padding: 43px 22px 38px;
+    padding: 27px 18px 44px;
   }
 
   @media (min-width: $desktop-width) {
     border: 0;
     background: 0;
+    padding: 33px 22px 38px;
   }
 }
 
 
-.page-header__top .page-header__toggle > span::after,
-.page-header__top .page-header__toggle > span::before {
+.page-header__container-opened .page-header__toggle > span::after,
+.page-header__container-opened .page-header__toggle > span::before {
   top: 0;
   width: 29px;
   background: #ffffff;
   transform-origin: 50% 50%;
   transform: rotate3d(0, 0, 1, 45deg);
+
+  @media (min-width: $tablet-width) {
+    top: 7px;
+  }
 }
 
 .page-header__top .page-header__toggle > span::before {
@@ -135,6 +139,162 @@
 }
 
 .page-header__open-photo {
+  background-size: 100%;
+  background-position: bottom -220px center;
+
+  @media (min-width: $tablet-width) {
+    background-size: 171%;
+    background-position: bottom -253px center;
+  }
+}
+
+.page-header__container-opened {
+  .page-header__list {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    background: #283645;
+
+    @media (min-width: $desktop-width) {
+      background-color: transparent;
+      display: flex;
+      flex-wrap: wrap;
+      flex: 10 1 auto;
+      justify-content: flex-end;
+      padding: 30px 0 10px 14px;
+    }
+  }
+}
+
+.page-header__item {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  padding: 14px 0;
+  font-size: 18px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #000001;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    border: none;
+    padding-left: 71px;
+    text-transform: none;
+    font-weight: normal;
+    line-height: 18px;
+  }
+
+  a {
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 32px;
+    text-decoration: none;
+
+    @media (min-width: $desktop-width) {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+}
+
+.page-header__item-academy {
+  padding-right: 0;
+  padding-top: 18px;
+
+  @media (min-width: $desktop-width) {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    padding-top: 14px;
+  }
+}
+
+.page-header__list {
+  @media (min-width: $desktop-width) {
+    background-color: transparent;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 10 1 auto;
+    justify-content: flex-end;
+    padding: 25px 0 10px 14px;
+    margin-top: 0;
+  }
+}
+
+.page-header__item-index a {
+  @media (min-width: $desktop-width) {
+    padding-right: 8px;
+  }
+}
+
+.page-header__item-photo a {
+  @media (min-width: $desktop-width) {
+    padding-right: 7px;
+  }
+}
+
+.page-header__item-form a {
+  @media (min-width: $desktop-width) {
+    padding-right: 8px;
+  }
+}
+
+.page-header__logo-mobile {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-tablet {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__logo-desktop {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    left: 129px;
+    position: absolute;
+    top: 27px;
+  }
+}
+
+.page-header__index {
+  @media (min-width: $desktop-width) {
+    padding-bottom: 27px;
+  }
+}
+
+.page-header__open-form {
+  background-size: 100%;
+  background-position: bottom -220px center;
+
   @media (min-width: $tablet-width) {
     background-size: 171%;
     background-position: bottom -253px center;
