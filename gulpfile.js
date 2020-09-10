@@ -49,3 +49,32 @@ const watcher = () => {
 exports.default = gulp.series(
   styles, server, watcher
 );
+
+const webp = require("gulp-webp");
+const createWebp = () => {
+  return gulp.src("source/img/**/*.{png,jpg}")
+    .pipe(webp({ quality: 90 }))
+    .pipe(gulp.dest("source/img"))
+}
+exports.webp = createWebp;
+
+const imagemin = require("gulp-imagemin");
+const images = () => {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({ optimizationLevel: 3 }),
+      imagemin.mozjpeg({ progressive: true }),
+      imagemin.svgo()
+    ]))
+}
+exports.images = images;
+
+const rename = require("gulp-rename");
+const svgstore = require("gulp-svgstore");
+const sprite = () => {
+  return gulp.src("source/img/**/*.svg")
+    .pipe(svgstore())
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"))
+}
+exports.sprite = sprite;

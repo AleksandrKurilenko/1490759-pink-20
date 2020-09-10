@@ -6,13 +6,19 @@
   font-size: 0;
   line-height: 0;
   position: relative;
-  padding: 108px 0 102px;
+  padding: 161px 0 102px;
   text-align: center;
   background: #f2f2f2;
-  clip-path: polygon(0 calc(12% - 24px), 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 calc(12% - 54px), 100% 0, 100% 100%, 0 100%);
 
   @media (min-width: $tablet-width) {
-    padding: 60px 0 102px;
+    padding: 97px 0 67px;
+    clip-path: polygon(0 calc(12% - 10px), 100% 0, 100% 100%, 0 100%);
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 162px 0 98px;
+    clip-path: polygon(0 calc(21% - 9px), 100% 5px, 100% 100%, 0 100%);
   }
 }
 
@@ -61,6 +67,18 @@
 
 .price__wrapper {
   overflow: hidden;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 20px;
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 9px;
+    width: 960px;
+    margin: 0 auto;
+  }
 }
 
 .price-table {
@@ -76,7 +94,7 @@
 }
 
 th.price-table__cell {
-  padding: 17px 0;
+  padding: 0 0;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -85,7 +103,11 @@ th.price-table__cell {
   border-left: 1px solid #e5e5e5;
 
   @media (min-width: $tablet-width) {
-    padding: 10px 0;
+    padding: 8px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 12px 11px 17px 15px;
   }
 }
 
@@ -95,7 +117,8 @@ td.price-table__cell:first-child .price-table__cell-headline::before {
 }
 
 .price-table__cell {
-  padding: 16px 0 13px;
+  padding: 0 0 2px;
+
   background: #ffffff;
   border: 1px solid #e5e5e5;
   overflow: hidden;
@@ -103,6 +126,10 @@ td.price-table__cell:first-child .price-table__cell-headline::before {
   @media (min-width: $tablet-width) {
     width: 25%;
     padding: 5px 0 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 17px 19px 13px 19px;
   }
 }
 
@@ -113,27 +140,37 @@ td.price-table__cell:first-child .price-table__cell-headline::before {
 .price-table__cell-inner--hit::before {
   position: absolute;
   margin: auto;
-  top: -21px;
+  top: -19px;
   bottom: auto;
-  left: -41px;
-  right: auto;
+  left: -56px;
+  right: 184px;
   content: "хит";
-  width: 71px;
-  height: 21px;
-  font-size: 14px;
-  line-height: 67px;
+  width: 119px;
+  height: 46px;
+  font-size: 13px;
+  line-height: 66px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
   color: #ffffff;
-  border-bottom: 27px solid #d22856;
+  border-bottom: 25px solid #d22856;
   border-left: 19px solid transparent;
   border-right: 19px solid transparent;
   transform: rotate(-45deg);
   z-index: 10;
 
   @media (min-width: $tablet-width) {
-    width: 60px;
+    width: 99px;
+    top: -13px;
+    left: -40px;
+    right: 180px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 121px;
+    top: -12px;
+    left: -56px;
+    right: 180px;
   }
 }
 
@@ -146,6 +183,11 @@ td.price-table__cell:first-child .price-table__cell-headline::before {
       padding-left: 15px;
       font-size: 14px;
     }
+
+    @media (min-width: $desktop-width) {
+      font-size: 18px;
+      padding-left: 3px;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -154,23 +196,30 @@ td.price-table__cell:first-child .price-table__cell-headline::before {
 }
 
 .price-table__cell-title {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 30px;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
+  margin-top: 12px;
+  margin-bottom: 0;
+  padding-bottom: 26px;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
-    line-height: 30px;
-    font-weight: 700;
     margin: 0;
+    padding-bottom: 0;
+    padding-top: 3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
   }
 }
 
 .price-table__cell-cost,
 .price-table__cell-headline {
-  font-size: 24px;
+  font-size: 18px;
   line-height: 30px;
   font-weight: 300;
   text-align: center;
@@ -186,7 +235,7 @@ td.price-table__cell:first-child .price-table__cell-headline::before {
   font-weight: 400;
   color: #283645;
 
-  @media (min-width: 660px) {
+  @media (min-width: $tablet-width) {
     padding-left: 22px;
     font-size: 0;
     text-transform: none;
@@ -206,6 +255,14 @@ td.price-table__cell:first-child .price-table__cell-headline::before {
   height: 3px;
   background-color: #f25b26;
   transform: rotate(45deg);
+
+  @media (min-width: $tablet-width) {
+    right: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 82px;
+  }
 }
 
 .price-table__cell-headline::after {
@@ -219,6 +276,18 @@ td.price-table__cell:first-child .price-table__cell-headline::before {
   background-color: rgba(255, 255, 255, 0);
   border-right: 4px solid #3dc644;
   border-bottom: 4px solid #3dc644;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 31px;
+    right: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 30px;
+    top: -11px;
+    right: 89px;
+  }
 }
 
 .price-table__cell-headline--on::after {
@@ -226,17 +295,21 @@ td.price-table__cell:first-child .price-table__cell-headline::before {
 }
 
 th.price-table__cell:first-child {
-  @media (min-width: 660px) {
+  @media (min-width: $tablet-width) {
     border: none;
     opacity: 0;
   }
 }
 
 .price-table__cell-cost {
-  @media (min-width: 660px) {
+  @media (min-width: $tablet-width) {
     font-size: 18px;
     line-height: 30px;
     font-weight: 300;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
   }
 }
 
@@ -250,7 +323,7 @@ th.price-table__cell:first-child {
 .btn-price-1:checked ~ .price__wrapper .price-table {
   transform: translateX(23px);
 
-  @media (min-width: 660px) {
+  @media (min-width: $tablet-width) {
     transform: none;
   }
 }
@@ -258,7 +331,7 @@ th.price-table__cell:first-child {
 .btn-price-2:checked ~ .price__wrapper .price-table {
   transform: translateX(calc(-33.333333% + 23px));
 
-  @media (min-width: 660px) {
+  @media (min-width: $tablet-width) {
     transform: none;
   }
 }
@@ -266,7 +339,7 @@ th.price-table__cell:first-child {
 .btn-price-3:checked ~ .price__wrapper .price-table {
   transform: translateX(calc(-66.666666% + 24px));
 
-  @media (min-width: 660px) {
+  @media (min-width: $tablet-width) {
     transform: none;
   }
 }
