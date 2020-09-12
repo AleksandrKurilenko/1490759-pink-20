@@ -45,6 +45,8 @@
 
 .photo-posting {
   background: #f2f2f2;
+  margin-bottom: 6px;
+  padding-bottom: 41px;
 
   @media (min-width: $desktop-width) {
     background: #ffffff;
@@ -62,7 +64,9 @@
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
-  padding-left: 0;
+  padding-left: 17px;
+  padding-top: 17px;
+  padding-right: 32px;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
@@ -105,10 +109,10 @@
 .photo-posting__controls-toggle {
   content: "";
   position: absolute;
-  top: 20px;
+  top: 3px;
   right: 53px;
-  width: 12px;
-  height: 12px;
+  width: 14px;
+  height: 15px;
   border-radius: 50%;
   border: 2px solid #d22856;
   background: #f2f2f2;
@@ -119,7 +123,7 @@
 .photo-posting__controls-mobile {
   position: relative;
   padding-bottom: 72px;
-  padding-top: 25px;
+  padding-top: 8px;
 
   @media (min-width: $tablet-width) {
     display: none;

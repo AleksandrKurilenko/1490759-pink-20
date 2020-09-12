@@ -40,6 +40,7 @@
   text-align: right;
   text-transform: uppercase;
   color: #d22856;
+  position: relative;
 }
 
 .span {
@@ -49,7 +50,7 @@
 .main-photo__caption {
   background: #f2f2f2;
   margin-bottom: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 9px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -70,6 +71,10 @@
   transform: translateX(-50%);
   position: absolute;
   top: 0;
+
+  @media (min-width: $tablet-width) {
+    min-height: 509px;
+  }
 }
 
 .main-photo__panorama-caption {
@@ -79,28 +84,47 @@
   flex-direction: column;
   align-items: flex-start;
   margin-bottom: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   position: relative;
-  padding-top: 130px;
+  padding-top: 139px;
 
   @media (min-width: $tablet-width) {
     position: relative;
-    padding-top: 500px;
+    padding-top: 517px;
   }
 
   .main-photo__like {
+    position: relative;
+
     @media (min-width: $tablet-width) {
       content: "";
       position: absolute;
       margin: auto;
-      top: 576px;
-      bottom: auto;
-      left: auto;
+      bottom: 75px;
+      left: 386px;
       right: 23px;
       width: 135px;
     }
   }
 }
+
+.main-photo__like::before {
+  position: absolute;
+  content: "";
+  width: 14px;
+  height: 14px;
+  left: 16px;
+  top: 4px;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+
+  @media (min-width: $tablet-width) {
+    left: 152px;
+    top: 4px;
+  }
+}
+
 
 .main-photo__panorama-caption::after {
   position: absolute;
@@ -108,7 +132,7 @@
   top: 0;
   bottom: auto;
   left: auto;
-  right: 6.25%;
+  right: 0.25%;
   content: "Панорама дня";
   width: 140px;
   height: 36px;
@@ -203,4 +227,71 @@
 
 .main-photo__panorama-background {
   background: #f2f2f2;
+}
+
+.main-photo__user-item1 {
+  .main-photo__caption {
+    padding-bottom: 17px;
+  }
+
+  .main-photo__title {
+    padding-top: 10px;
+    margin-top: 0;
+  }
+}
+
+.main-photo__user-item2 {
+  .main-photo__caption {
+    padding-bottom: 19px;
+  }
+
+  .main-photo__title {
+    padding-top: 10px;
+    margin-top: 0;
+  }
+}
+
+.main-photo__user-item3 {
+  .main-photo__caption {
+    padding-bottom: 18px;
+  }
+
+  .main-photo__title {
+    padding-top: 10px;
+    margin-top: 0;
+  }
+}
+
+.main-photo__user-item4 {
+  .main-photo__caption {
+    padding-bottom: 19px;
+  }
+
+  .main-photo__title {
+    padding-top: 10px;
+    margin-top: 0;
+  }
+}
+
+.main-photo__user-item5 {
+  .main-photo__caption {
+    padding-bottom: 19px;
+  }
+
+  .main-photo__title {
+    padding-top: 10px;
+    margin-top: 0;
+  }
+}
+
+.main-photo__user-item6 {
+  .main-photo__caption {
+    padding-bottom: 19px;
+    margin-bottom: 40px;
+  }
+
+  .main-photo__title {
+    padding-top: 10px;
+    margin-top: 0;
+  }
 }

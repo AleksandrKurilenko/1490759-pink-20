@@ -5,6 +5,10 @@ const sass = require("gulp-sass");
 const postcss = require("gulp-postcss");
 const autoprefixer = require("autoprefixer");
 const sync = require("browser-sync").create();
+const webp = require("gulp-webp");
+const imagemin = require("gulp-imagemin");
+const rename = require("gulp-rename");
+const svgstore = require("gulp-svgstore");
 
 // Styles
 
@@ -50,7 +54,7 @@ exports.default = gulp.series(
   styles, server, watcher
 );
 
-const webp = require("gulp-webp");
+
 const createWebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
     .pipe(webp({ quality: 90 }))
@@ -58,7 +62,7 @@ const createWebp = () => {
 }
 exports.webp = createWebp;
 
-const imagemin = require("gulp-imagemin");
+
 const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
     .pipe(imagemin([
@@ -69,8 +73,7 @@ const images = () => {
 }
 exports.images = images;
 
-const rename = require("gulp-rename");
-const svgstore = require("gulp-svgstore");
+
 const sprite = () => {
   return gulp.src("source/img/**/*.svg")
     .pipe(svgstore())
