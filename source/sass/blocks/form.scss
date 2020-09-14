@@ -504,7 +504,7 @@
 }
 
 .form__checkbox:checked {
-  &+.form__label-checkbox::after {
+  & + .form__label-checkbox::after {
     content: "";
     position: absolute;
     margin: auto;
@@ -736,7 +736,7 @@
   }
 }
 
-.form__radio:checked+.form__label-radio::after {
+.form__radio:checked + .form__label-radio::after {
   content: "";
   position: absolute;
   margin: auto;
