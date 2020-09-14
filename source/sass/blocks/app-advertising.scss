@@ -1,8 +1,12 @@
 .app-advertising {
   position: relative;
-  background: #f2f2f2 url("../img/bg-triangle-white.svg") no-repeat top center;
-  background-size: 100% auto;
+  background: #f2f2f2 url("../img/icons/bg-triangle-white.svg") no-repeat top center;
+  background-size: 180% auto;
   z-index: 20;
+
+  @media (min-width: $tablet-width) {
+    background-size: 115% auto;
+  }
 
   @media (min-width: $desktop-width) {
     background-size: 116% auto;
@@ -223,7 +227,7 @@
     position: absolute;
     margin: auto;
     top: 0;
-    bottom: 274px;
+    bottom: 278px;
     left: 37px;
     right: auto;
 
@@ -235,7 +239,7 @@
 
 .app-advertising__content-friends::after {
   @media (min-width: $desktop-width) {
-    background: url("../img/iphone-screen-3-desktop@1x") no-repeat top center;
+    background: url("../img/iphone-screen-3-desktop@1x.png") no-repeat top center;
     background-size: cover;
     width: 205px;
     height: 300px;
@@ -243,7 +247,7 @@
     position: absolute;
     margin: auto;
     top: 0;
-    bottom: 271px;
+    bottom: 275px;
     left: 36px;
     right: auto;
 

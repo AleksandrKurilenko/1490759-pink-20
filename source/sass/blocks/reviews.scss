@@ -4,6 +4,7 @@
   padding-bottom: 32px;
   margin-top: -51px;
   z-index: 20;
+  margin-bottom: 30px;
 
   @media (min-width: $tablet-width) {
     margin-top: 0;
@@ -12,6 +13,7 @@
 
   @media (min-width: $desktop-width) {
     padding-top: 150px;
+    margin-bottom: 0;
   }
 }
 
@@ -103,9 +105,21 @@
 
 .reviews__radio {
   display: flex;
-  padding: 0;
-  margin: 0 auto;
   justify-content: space-between;
+  content: "";
+  position: absolute;
+  margin: auto;
+  top: auto;
+  bottom: -1px;
+  left: -45px;
+  right: 0;
+  width: 110px;
+  text-align: center;
+  z-index: 60;
+
+  @media (min-width: $tablet-width) {
+    bottom: -22px;
+  }
 
   @media (min-width: $desktop-width) {
     display: none;
@@ -123,7 +137,7 @@
   width: 6px;
   height: 6px;
   margin: 0 6px;
-  vertical-align: top;
+  vertical-align: middle;
   background: #bec2c7;
   border-radius: 50%;
   cursor: pointer;
@@ -134,6 +148,8 @@
 .reviews__radio-input1:checked ~ .reviews__radio-control3 {
   background: #ffffff;
   border: solid 3px #283645;
+  width: 12px;
+  height: 12px;
 }
 
 .reviews__avtor::before {

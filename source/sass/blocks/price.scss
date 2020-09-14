@@ -6,10 +6,10 @@
   font-size: 0;
   line-height: 0;
   position: relative;
-  padding: 161px 0 102px;
+  padding: 101px 0 97px;
   text-align: center;
   background: #f2f2f2;
-  clip-path: polygon(0 calc(12% - 54px), 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 calc(14% - 49px), 100% 0, 100% 100%, 0 100%);
 
   @media (min-width: $tablet-width) {
     padding: 97px 0 67px;
@@ -17,7 +17,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 162px 0 98px;
+    padding: 161px 0 98px;
     clip-path: polygon(0 calc(21% - 9px), 100% 5px, 100% 100%, 0 100%);
   }
 }
@@ -39,7 +39,7 @@
   right: 0;
   width: 120px;
   height: 20px;
-  padding-bottom: 39px;
+  padding-bottom: 59px;
   z-index: 10;
 
   @media (min-width: $tablet-width) {
@@ -49,8 +49,8 @@
 
 .price__controls label {
   display: inline-block;
-  width: 6px;
-  height: 6px;
+  width: 13px;
+  height: 13px;
   margin: 0 6px;
   vertical-align: top;
   background: #283645;
@@ -62,7 +62,7 @@
 
 .price__controls label:hover {
   background: #283645;
-  opacity: 0.6;
+  opacity: 0.9;
 }
 
 .price__wrapper {
@@ -137,12 +137,20 @@ td.price-table__cell:first-child .price-table__cell-headline::before {
   position: relative;
 }
 
+.price-table__cell-inner {
+  padding-bottom: 26px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 0;
+  }
+}
+
 .price-table__cell-inner--hit::before {
   position: absolute;
   margin: auto;
-  top: -19px;
+  top: -12px;
   bottom: auto;
-  left: -56px;
+  left: -57px;
   right: 184px;
   content: "хит";
   width: 119px;
@@ -203,7 +211,7 @@ td.price-table__cell:first-child .price-table__cell-headline::before {
   text-transform: uppercase;
   margin-top: 12px;
   margin-bottom: 0;
-  padding-bottom: 26px;
+  padding-bottom: 0;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
@@ -318,6 +326,7 @@ th.price-table__cell:first-child {
 .btn-price-3:checked ~ .price__controls label[for="btn-price-3"] {
   background: #ffffff;
   border: solid 3px #283645;
+  opacity: 1;
 }
 
 .btn-price-1:checked ~ .price__wrapper .price-table {

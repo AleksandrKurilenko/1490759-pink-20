@@ -1,12 +1,11 @@
 .page-header {
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
   background-position: top -6px center;
+  background-size: 100% auto;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/bg-back-mobile@2x.jpg");
-    background-size: 100% auto;
   }
 
   @media (min-width: $tablet-width) {
@@ -49,7 +48,7 @@
 }
 
 .page-header__toggle {
-  display: flex;
+  display: none;
   width: 50px;
   padding: 0;
   border: 0;
@@ -95,13 +94,14 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 20px 20px;
+  padding: 23px 20px 16px;
   border-bottom: 1px solid #000001;
   cursor: pointer;
   background: #283645;
 
   @media (min-width: $tablet-width) {
     padding: 27px 18px 44px;
+    padding-bottom: 42px;
   }
 
   @media (min-width: $desktop-width) {
@@ -119,18 +119,21 @@
   background: #ffffff;
   transform-origin: 50% 50%;
   transform: rotate3d(0, 0, 1, 45deg);
+  bottom: 9px;
+  right: -3px;
 
   @media (min-width: $tablet-width) {
-    top: 7px;
+    top: 23px;
+    right: -1px;
   }
 }
 
-.page-header__top .page-header__toggle > span::before {
+.page-header__container-opened .page-header__toggle > span::before {
   transform: rotate3d(0, 0, 1, -45deg);
 }
 
 .page-header__open-index {
-  background-position: bottom 277px center;
+  background-position: bottom 271px center;
 
   @media (min-width: $tablet-width) {
     background-size: cover;
@@ -173,7 +176,7 @@
   position: relative;
   display: block;
   text-decoration: none;
-  padding: 14px 0;
+  padding: 14px 0 16px 0;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
@@ -208,7 +211,14 @@
 
 .page-header__item-academy {
   padding-right: 0;
-  padding-top: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 0;
+    padding-top: 14px;
+    padding-bottom: 18px;
+  }
 
   @media (min-width: $desktop-width) {
     font-weight: normal;
@@ -246,6 +256,11 @@
   @media (min-width: $desktop-width) {
     padding-right: 8px;
   }
+}
+
+.page-header__logo:hover .page-header__logo-mobile {
+  fill: #d22856;
+  transition: 0.1s;
 }
 
 .page-header__logo-mobile {
@@ -299,4 +314,68 @@
     background-size: 171%;
     background-position: bottom -253px center;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 27px;
+    min-height: 394px;
+    background-size: 213%;
+    background-position: center top;
+  }
+}
+
+
+.page-header__item-form {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 16px;
+  }
+}
+
+.page-header__item-photo {
+  @media (min-width: $tablet-width) {
+    padding-bottom: 16px;
+  }
+}
+
+.page-header__link:hover {
+  color: #d22856;
+}
+
+.page-header__link:active {
+  color: #d22856;
+  opacity: 0.3;
+
+  @media (min-width: $desktop-width) {
+    color: #ffffff;
+    opacity: 0.3;
+  }
+}
+
+.page-header__link {
+  position: relative;
+}
+
+.page-header__link-active::after {
+  background: #ffffff;
+}
+
+.page-header__link-active::after,
+.page-header__link-active:hover::after,
+.page-header__link-active:active::after {
+  @media (min-width: $desktop-width) {
+    content: "";
+    position: absolute;
+    margin: auto;
+    top: 41px;
+    bottom: 0;
+    left: -11px;
+    right: 0;
+    width: 96%;
+    height: 2px;
+    z-index: 20;
+    background: #ffffff;
+  }
+}
+
+.page-header__link-active:hover::after {
+  color: #d22856;
 }

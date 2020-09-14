@@ -16,7 +16,12 @@
 
 .download-title__container {
   @media (min-width: $tablet-width) {
-    margin-top: 60px;
+    margin-top: 24px;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 19px;
     margin-bottom: 38px;
   }
 }
