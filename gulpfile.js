@@ -54,12 +54,8 @@ exports.server = server;
 
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/*.html", gulp.series(html)).on("change", sync.reload);
 }
-
-exports.default = gulp.series(
-  styles, server, watcher
-);
 
 
 const createWebp = () => {
@@ -125,3 +121,8 @@ const build = gulp.series(
   html
 );
 exports.build = build;
+
+
+exports.default = gulp.series(
+  build, server, watcher
+);

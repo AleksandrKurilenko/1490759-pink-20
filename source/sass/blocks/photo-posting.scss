@@ -11,6 +11,10 @@
   height: 55px;
   margin-bottom: 13px;
 
+  .photo-posting__button--submit:hover {
+    background-color: #d22856;
+  }
+
   @media (min-width: $tablet-width) {
     width: 260px;
     margin-bottom: 25px;

@@ -19,6 +19,10 @@
   }
 }
 
+.page-footer__copyright-link:hover + .page-footer__icon-academy {
+  fill: #283645;
+}
+
 .page-footer__copyright {
   display: flex;
   flex-direction: column;
