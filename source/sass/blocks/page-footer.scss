@@ -19,7 +19,7 @@
   }
 }
 
-.page-footer__copyright-link:hover + .page-footer__icon-academy {
+.page-footer__copyright-link:hover .page-footer__icon-academy {
   fill: #283645;
 }
 
@@ -171,4 +171,14 @@
 
 .page-footer__icon--facebook {
   padding-left: 19px;
+}
+
+.page-footer__blue-desktop,
+.page-footer__blue-mobile {
+  fill: #283645;
+}
+
+.page-footer__logo:hover .page-footer__blue-desktop,
+.page-footer__logo:hover .page-footer__blue-mobile {
+  fill: #d22856;
 }

@@ -380,3 +380,15 @@
 .page-header__link-active:hover::after {
   color: #d22856;
 }
+
+.page-header__logo-desktop,
+.page-header__logo-tablet,
+.page-header__logo-mobile {
+  fill: #ffffff;
+}
+
+.page-header__logo:hover .page-header__logo-desktop,
+.page-header__logo:hover .page-header__logo-tablet,
+.page-header__logo:hover .page-header__logo-mobile {
+  fill: #d22856;
+}

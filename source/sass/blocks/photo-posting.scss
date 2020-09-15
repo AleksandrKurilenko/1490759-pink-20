@@ -11,8 +11,9 @@
   height: 55px;
   margin-bottom: 13px;
 
-  .photo-posting__button--submit:hover {
-    background-color: #d22856;
+  &:hover {
+    background: #d22856;
+    color: #ffffff;
   }
 
   @media (min-width: $tablet-width) {
@@ -39,6 +40,10 @@
   border-radius: 30px;
   width: 280px;
   height: 55px;
+
+  &:hover {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     width: 260px;
@@ -153,6 +158,10 @@
   background: #f2f2f2;
   z-index: 10;
   cursor: pointer;
+
+  &:active {
+    background: #d22856;
+  }
 }
 
 .photo-posting__controls-mobile {
@@ -217,6 +226,10 @@
 .photo-posting__crop {
   fill: #d22856;
 
+  &:hover {
+    opacity: 0.5;
+  }
+
   @media (min-width: $tablet-width) {
     width: 25px;
   }
@@ -228,6 +241,10 @@
 
 .photo-posting__contrast {
   opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
 
   @media (min-width: $tablet-width) {
     width: 25px;
@@ -244,6 +261,10 @@
 
 .photo-posting__fill {
   opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
 
   @media (min-width: $tablet-width) {
     width: 25px;
