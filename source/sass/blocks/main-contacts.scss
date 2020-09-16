@@ -149,6 +149,13 @@
   color: #283645;
 }
 
+.main-contacts__tel:active,
+.main-contacts__write-mail:active {
+  color: #283645;
+  opacity: 0.3;
+}
+
+
 .main-contacts__write-mail {
   padding-left: 21px;
 
@@ -164,6 +171,15 @@
 .main-contacts__adress-info {
   padding-left: 2px;
   font-style: normal;
+
+  &:hover {
+    color: #283645;
+  }
+
+  &:active {
+    color: #283645;
+    opacity: 0.3;
+  }
 }
 
 .main-contacts__container {

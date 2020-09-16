@@ -16,6 +16,12 @@
     color: #ffffff;
   }
 
+  &:active {
+    background: #d22856;
+    color: #ffffff;
+    opacity: 0.3;
+  }
+
   @media (min-width: $tablet-width) {
     width: 260px;
     margin-bottom: 25px;
@@ -43,6 +49,12 @@
 
   &:hover {
     opacity: 0.3;
+  }
+
+  &:active {
+    background: #283645;
+    opacity: 0.3;
+    color: #ffffff;
   }
 
   @media (min-width: $tablet-width) {

@@ -392,3 +392,10 @@
 .page-header__logo:hover .page-header__logo-mobile {
   fill: #d22856;
 }
+
+.page-header__logo:active .page-header__logo-desktop,
+.page-header__logo:active .page-header__logo-tablet,
+.page-header__logo:active .page-header__logo-mobile {
+  fill: #ffffff;
+  opacity: 0.3;
+}

@@ -23,6 +23,11 @@
   fill: #283645;
 }
 
+.page-footer__copyright-link:active .page-footer__icon-academy {
+  fill: #283645;
+  opacity: 0.3;
+}
+
 .page-footer__copyright {
   display: flex;
   flex-direction: column;
@@ -79,6 +84,11 @@
 
 .page-footer__icon:hover {
   border: 3px solid #283645;
+}
+
+.page-footer__icon:active {
+  border: 3px solid #283645;
+  opacity: 0.1;
 }
 
 .page-footer__icon {
@@ -181,4 +191,9 @@
 .page-footer__logo:hover .page-footer__blue-desktop,
 .page-footer__logo:hover .page-footer__blue-mobile {
   fill: #d22856;
+}
+
+.page-footer__logo:active .page-footer__blue-desktop,
+.page-footer__logo:active .page-footer__blue-mobile {
+  opacity: 0.3;
 }

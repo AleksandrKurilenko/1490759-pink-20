@@ -101,6 +101,15 @@
   color: #d22856;
   padding-left: 57px;
 
+  &:hover {
+    color: #283645;
+  }
+
+  &:active {
+    color: #283645;
+    opacity: 0.3;
+  }
+
   @media (min-width: $desktop-width) {
     font-size: 18px;
     line-height: 30px;

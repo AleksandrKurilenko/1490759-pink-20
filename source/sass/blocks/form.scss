@@ -293,6 +293,13 @@
   border-radius: 1px;
 }
 
+.form__submit:active {
+  background: #1c9b5e;
+  border: 2px solid #1c9b5e;
+  border-radius: 1px;
+  opacity: 0.3;
+}
+
 .form__label-checkbox {
   position: relative;
   padding-left: 57px;

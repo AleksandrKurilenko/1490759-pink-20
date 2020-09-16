@@ -209,6 +209,10 @@
     opacity: 0.6;
   }
 
+  &:active {
+    opacity: 0.1;
+  }
+
   @media (min-width: $desktop-width) {
     left: 10px;
   }
@@ -217,6 +221,10 @@
 .reviews__arrow-right {
   &:hover {
     opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
   }
 
   @media (min-width: $desktop-width) {
